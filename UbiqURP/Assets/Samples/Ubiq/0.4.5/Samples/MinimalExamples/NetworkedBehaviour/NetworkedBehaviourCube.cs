@@ -37,14 +37,21 @@ namespace Ubiq.Samples
         public string String;
         public NestedClass Class;
         public Color Color;
+        public bool fire;
 
         private Material material;
 
         private void Awake()
         {
-            material = GetComponent<MeshRenderer>().material;
+            material = GetComponentInChildren<MeshRenderer>().material;
         }
 
+        
+
+        private void Fire()
+        {
+
+        }
         void Start()
         {
             NetworkedBehaviours.Register(this);
@@ -53,6 +60,10 @@ namespace Ubiq.Samples
         void Update()
         {
             material.color = Color;
+            if( fire )
+            {
+                Fire();
+            }
         }
     }
 }
