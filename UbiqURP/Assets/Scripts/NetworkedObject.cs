@@ -37,7 +37,7 @@ public class NetworkedObject : MonoBehaviour
             }
             else
             {
-                rb.useGravity = false;
+               // rb.useGravity = false;
             }
             
         }
@@ -48,6 +48,7 @@ public class NetworkedObject : MonoBehaviour
         public Vector3 position;
         public Quaternion rotation;
         public bool clearOwners;
+        public bool useGravity;
     }
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
@@ -61,5 +62,10 @@ public class NetworkedObject : MonoBehaviour
         owner = m.clearOwners;
         // Make sure the logic in Update doesn't trigger as a result of this message
         lastPosition = transform.localPosition;
+
+        //Try to trigger rb gravity based on message
+        
+        rb.useGravity = m.useGravity;
+       
     }
 }

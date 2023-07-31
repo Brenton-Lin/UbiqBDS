@@ -1,58 +1,63 @@
 using System.Collections;
 using System.Collections.Generic;
+using Ubiq.Messaging;
 using Ubiq.Samples;
 using Ubiq.Spawning;
 using Ubiq.XR;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class FireArm : MonoBehaviour, IUseable, IGraspable
+public class FireArm : NetworkedGrabbable, IUseable
 {
-    public bool owner;
-    private Hand follow;
-    private Rigidbody body;
+    public bool fire;
+    public ParticleSystem effects;
     // Start is called before the first frame update
-    private void Awake()
+    private new void Awake()
     {
-        body = GetComponent<Rigidbody>();
-       
-    }
-    public void Grasp(Hand controller)
-    {
-        follow = controller;
-    }
-
-    public void Release(Hand controller)
-    {
-        follow = null;
+        base.Awake();
+        effects = GetComponentInChildren<ParticleSystem>();
     }
 
     public void UnUse(Hand controller)
     {
-
+        fire = false;
     }
 
     public void Use(Hand controller)
     {
-        
+        fire = true;
     }
 
     // Update is called once per frame
-    void Update()
+    public new struct Message
     {
-        if (follow != null)
-        {
+        public TransformMessage transform;
+        public bool ownership;
+        public bool fire;
 
-            transform.position = follow.transform.position;
-            transform.rotation = follow.transform.rotation;
-            body.isKinematic = true;
-            body.useGravity = false;
-        }
-        else
+        public Message(Transform transform, bool ownership, bool fire)
         {
-            //body.isKinematic = false;
-            //now toggles in NetworkedObject to try and fix rubberbanding on remote;
-            //body.useGravity = true;
+            this.transform = new TransformMessage(transform);
+            this.ownership = ownership;
+            this.fire = fire;
         }
+    }
+
+    // Update is called once per frame
+    public new void Update()
+    {
+       base.Update();
+       if(fire)
+        {
+            effects.Play();
+        }
+    }
+
+    public new void ProcessMessage(ReferenceCountedSceneGraphMessage message)
+    {
+        var msg = message.FromJson<Message>();
+        transform.localPosition = msg.transform.position; // The Message constructor will take the *local* properties of the passed transform.
+        transform.localRotation = msg.transform.rotation;
+        owner = msg.ownership;
+        fire = msg.fire;
     }
 }

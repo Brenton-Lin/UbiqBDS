@@ -24,16 +24,24 @@ public class Grabbable : MonoBehaviour, IGraspable
         {
             //this should work for now, but how to clear owners on new owner?
             network.owner = true;
-           
+            network.context.SendJson(new Message() { useGravity = false });
         }
        
+    }
+
+    private struct Message
+    {
+        public Vector3 position;
+        public Quaternion rotation;
+        public bool clearOwners;
+        public bool useGravity;
     }
 
     public void Release(Hand controller)
     {
         follow = null;
-        //body.useGravity = true;
-        //network.context.SendJson(new Message() { });
+        body.useGravity = true;
+        network.context.SendJson(new Message() { useGravity = true });
     }
 
     // Update is called once per frame
@@ -48,7 +56,7 @@ public class Grabbable : MonoBehaviour, IGraspable
         }
         else
         {
-            body.isKinematic = false;
+            //body.isKinematic = false;
             //now toggles in NetworkedObject to try and fix rubberbanding on remote;
             //body.useGravity = true;
         }

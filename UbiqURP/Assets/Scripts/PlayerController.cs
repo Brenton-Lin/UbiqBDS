@@ -53,6 +53,7 @@ public class PlayerController : XRPlayerController
         userLocalPosition.x += (headProjectionXZ.x - userLocalPosition.x) * Time.deltaTime * cameraRubberBand.Evaluate(Mathf.Abs(headProjectionXZ.x - userLocalPosition.x));
         userLocalPosition.z += (headProjectionXZ.z - userLocalPosition.z) * Time.deltaTime * cameraRubberBand.Evaluate(Mathf.Abs(headProjectionXZ.z - userLocalPosition.z));
         userLocalPosition.y = 0;
+        //controller.transform.position = userLocalPosition;
     }
 
     private void OnGround()

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listenOnIp: 
   listenOnPort: 
-  sendToIp: nexus.cs.ucl.ac.uk
+  sendToIp: localhost
   sendToPort: 8009
   type: 0
   platforms:
