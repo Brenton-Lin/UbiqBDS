@@ -5,9 +5,11 @@ using Valve.VR;
 using UnityEngine;
 using static UnityEngine.SpatialTracking.TrackedPoseDriver;
 using Tilia.SDK.SteamVR.Input;
+using Zinnia.Action;
 
 public class VRTKHandController : HandController
 {
+    public BooleanAction desktopTrigger;
     public SteamVRBehaviourBooleanAction triggerButtonState;
     public SteamVRBehaviourFloatAction gripState;
     public SteamVR_Behaviour_Single handSource;
@@ -44,8 +46,16 @@ public class VRTKHandController : HandController
 
     public void UpdateGripState()
     {
+        if (desktopTrigger.Value)
+        {
+            TriggerState = desktopTrigger.Value;
+        }
+        else
+        {
+            TriggerState = triggerButtonState.Value;
+        }
         GripValue = gripState.Value;
-        TriggerState = triggerButtonState.Value;
+        
         //Debug.Log("VRTK Controller Update");
     }
 
