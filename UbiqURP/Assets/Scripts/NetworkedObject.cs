@@ -9,6 +9,8 @@ public class NetworkedObject : MonoBehaviour
 {
     public NetworkContext context;
     public bool owner;
+    public bool use;
+    public ParticleSystem testParticles;
     private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,7 @@ public class NetworkedObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Network Physics
         if (lastPosition != transform.localPosition)
         {
             
@@ -32,13 +35,25 @@ public class NetworkedObject : MonoBehaviour
                 {
                     position = transform.localPosition,
                     rotation = transform.localRotation,
-                    clearOwners = false
+                    clearOwners = false,
+                    use = use
                 }) ;
             }
             else
             {
                // rb.useGravity = false;
             }
+            
+        }
+        else
+        {
+            rb.useGravity = true;
+            
+        }
+        //NetworkedEvents
+        if (use)
+        {
+            testParticles.Play();
             
         }
     }
@@ -49,8 +64,19 @@ public class NetworkedObject : MonoBehaviour
         public Quaternion rotation;
         public bool clearOwners;
         public bool useGravity;
+        public bool use;
     }
     public void SetOwner() { owner = true; }
+
+    public void RemoteUse()
+    {
+        
+    }
+
+    public void UseObject()
+    {
+        use = true;
+    }
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
         // Parse the message
@@ -62,7 +88,7 @@ public class NetworkedObject : MonoBehaviour
         owner = m.clearOwners;
         // Make sure the logic in Update doesn't trigger as a result of this message
         lastPosition = transform.localPosition;
-
+        use = m.use;
         //Try to trigger rb gravity based on message
         
         rb.useGravity = m.useGravity;
