@@ -50,7 +50,7 @@ public class NetworkedObject : MonoBehaviour
         public bool clearOwners;
         public bool useGravity;
     }
-
+    public void SetOwner() { owner = true; }
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
         // Parse the message
