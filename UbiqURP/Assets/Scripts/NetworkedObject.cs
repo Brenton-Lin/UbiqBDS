@@ -54,7 +54,7 @@ public class NetworkedObject : MonoBehaviour
         if (use)
         {
             testParticles.Play();
-            
+            use = false;
         }
     }
 
@@ -67,11 +67,6 @@ public class NetworkedObject : MonoBehaviour
         public bool use;
     }
     public void SetOwner() { owner = true; }
-
-    public void RemoteUse()
-    {
-        
-    }
 
     public void UseObject()
     {
