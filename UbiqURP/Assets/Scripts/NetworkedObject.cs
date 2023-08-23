@@ -36,12 +36,13 @@ public class NetworkedObject : MonoBehaviour
                     position = transform.localPosition,
                     rotation = transform.localRotation,
                     clearOwners = false,
+                    isKinematic = true,
                     use = use
                 }) ;
             }
             else
             {
-               // rb.useGravity = false;
+               
             }
             
         }
@@ -56,6 +57,11 @@ public class NetworkedObject : MonoBehaviour
             testParticles.Play();
             use = false;
         }
+        //Object has stopped moving, turn isKinematic off
+        if(rb.velocity.magnitude == 0)
+        {
+            rb.isKinematic = false;
+        }
     }
 
     private struct Message
@@ -63,7 +69,7 @@ public class NetworkedObject : MonoBehaviour
         public Vector3 position;
         public Quaternion rotation;
         public bool clearOwners;
-        public bool useGravity;
+        public bool isKinematic;
         public bool use;
     }
     public void SetOwner() { owner = true; }
@@ -83,10 +89,7 @@ public class NetworkedObject : MonoBehaviour
         owner = m.clearOwners;
         // Make sure the logic in Update doesn't trigger as a result of this message
         lastPosition = transform.localPosition;
-        use = m.use;
-        //Try to trigger rb gravity based on message
-        
-        rb.useGravity = m.useGravity;
-       
+        rb.isKinematic = m.isKinematic;
+        use = m.use;    
     }
 }
