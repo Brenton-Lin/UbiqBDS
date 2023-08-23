@@ -48,19 +48,20 @@ public class NetworkedObject : MonoBehaviour
         }
         else
         {
-            rb.useGravity = true;
+            
             
         }
         //NetworkedEvents
         if (use)
         {
-            testParticles.Play();
+            //testParticles.Play();
             use = false;
         }
         //Object has stopped moving, turn isKinematic off
         if(rb.velocity.magnitude == 0)
         {
             rb.isKinematic = false;
+            
         }
     }
 
