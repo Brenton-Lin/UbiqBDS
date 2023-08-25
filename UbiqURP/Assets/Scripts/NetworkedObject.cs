@@ -54,7 +54,7 @@ public class NetworkedObject : MonoBehaviour
         //NetworkedEvents
         if (use)
         {
-            //testParticles.Play();
+            DoUse();
             use = false;
         }
         //Object has stopped moving, turn isKinematic off
@@ -79,6 +79,9 @@ public class NetworkedObject : MonoBehaviour
     {
         use = true;
     }
+
+    public virtual void DoUse() { }
+    
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
         // Parse the message
