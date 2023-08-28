@@ -41,7 +41,14 @@ public class SimpleGun : MonoBehaviour
             if (Physics.Raycast(FirePoint.position, direction, out RaycastHit hit, float.MaxValue, Mask))
             {
                 Debug.Log(hit.transform.name);
+                //Instantiate a HitEffect facing the user.
                 Instantiate(HitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                TrackedShootingTarget target = hit.transform.GetComponent<TrackedShootingTarget>();
+
+                if(target != null)
+                {
+                    target.HitTarget();
+                }
             }
         }
     }
