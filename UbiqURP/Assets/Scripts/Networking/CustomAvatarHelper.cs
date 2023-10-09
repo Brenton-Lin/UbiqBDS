@@ -107,7 +107,7 @@ namespace Ubiq.Avatars
 
             if (!transform)
             {
-                Debug.LogWarning("Could not find a hint source. Has the Ubiq player prefab changed?");
+                Debug.LogWarning("Could not find a transform hint source. Has the Ubiq player prefab changed?");
                 return;
             }
 
@@ -133,7 +133,7 @@ namespace Ubiq.Avatars
 
             if (!handController)
             {
-                Debug.LogWarning("Could not find a hint source. Has the Ubiq player prefab changed?");
+                Debug.LogWarning("Could not find a grip hint source. Has the Ubiq player prefab changed?");
                 return;
             }
 

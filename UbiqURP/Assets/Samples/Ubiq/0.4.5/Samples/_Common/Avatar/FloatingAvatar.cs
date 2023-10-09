@@ -12,6 +12,7 @@ namespace Ubiq.Samples
         public Transform torso;
         public Transform leftHand;
         public Transform rightHand;
+        public Ubiq.Avatars.Avatar avatar;
 
         public Renderer headRenderer;
         public Renderer torsoRenderer;
@@ -33,6 +34,7 @@ namespace Ubiq.Samples
         private void OnEnable()
         {
             trackedAvatar = GetComponentInParent<ThreePointTrackedAvatar>();
+            avatar = GetComponentInParent<Avatars.Avatar>();
 
             if (trackedAvatar)
             {
@@ -47,6 +49,7 @@ namespace Ubiq.Samples
             {
                 texturedAvatar.OnTextureChanged.AddListener(TexturedAvatar_OnTextureChanged);
             }
+            
         }
 
         private void OnDisable()
@@ -93,6 +96,13 @@ namespace Ubiq.Samples
         private void Update()
         {
             UpdateTorso();
+            if (avatar.IsLocal)
+            {
+                headRenderer.enabled = false;
+                torsoRenderer.enabled = false;
+                rightHandRenderer.enabled = false;
+                leftHandRenderer.enabled = false;
+            }
         }
 
         private void UpdateTorso()
