@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ubiq.Messaging;
 
-public class PhysicsObject : MonoBehaviour
+public class PhysicsObject : NetworkedObject
 {
     public NetworkContext context;
     public bool owner;
@@ -58,10 +58,13 @@ public class PhysicsObject : MonoBehaviour
             use = false;
         }
         //Object has stopped moving, turn isKinematic off
-        if(rb.velocity.magnitude == 0)
+        if (rb != null)
         {
-            rb.isKinematic = false;
-            
+            if (rb.velocity.magnitude == 0)
+            {
+                rb.isKinematic = false;
+
+            }
         }
     }
 
@@ -93,7 +96,11 @@ public class PhysicsObject : MonoBehaviour
         owner = m.clearOwners;
         // Make sure the logic in Update doesn't trigger as a result of this message
         lastPosition = transform.localPosition;
-        rb.isKinematic = m.isKinematic;
+        if(rb != null)
+        {
+            rb.isKinematic = m.isKinematic;
+        }
+        
         use = m.use;    
     }
 }
