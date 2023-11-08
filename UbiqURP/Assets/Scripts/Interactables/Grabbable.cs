@@ -7,14 +7,14 @@ using Ubiq.Rooms.Messages;
 
 public class Grabbable : MonoBehaviour, IGraspable
 {
-    private NetworkedObject network;
+    private PhysicsObject network;
     private Hand follow;
     private Rigidbody body;
     // Start is called before the first frame update
     private void Awake()
     { 
         body = GetComponent<Rigidbody>();
-        network = GetComponent<NetworkedObject>();
+        network = GetComponent<PhysicsObject>();
     }
 
     public void Grasp(Hand controller)

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NetworkedGun : NetworkedObject
+public class NetworkedGun : PhysicsObject
 {
     [SerializeField]
     private SimpleGun gun;

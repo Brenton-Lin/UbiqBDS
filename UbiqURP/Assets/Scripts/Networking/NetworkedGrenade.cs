@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NetworkedGrenade : NetworkedObject
+public class NetworkedGrenade : PhysicsObject
 {
     // Start is called before the first frame update
     public GrenadeMechanism grenade;
