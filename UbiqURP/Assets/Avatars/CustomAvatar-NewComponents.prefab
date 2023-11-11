@@ -366,6 +366,11 @@ PrefabInstance:
       propertyPath: reference
       value: 
       objectReference: {fileID: 7388576005872743378}
+    - target: {fileID: 3335528819724582340, guid: 6eef3a5d83438a3469d1e2646152c70f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.36
+      objectReference: {fileID: 0}
     - target: {fileID: 4288313598144430233, guid: 6eef3a5d83438a3469d1e2646152c70f,
         type: 3}
       propertyPath: stepLength
@@ -400,16 +405,16 @@ PrefabInstance:
         type: 3}
       propertyPath: reference
       value: 
-      objectReference: {fileID: 7388576005872743378}
+      objectReference: {fileID: 8448906606779964024}
     - target: {fileID: 4525550075608807900, guid: 6eef3a5d83438a3469d1e2646152c70f,
         type: 3}
       propertyPath: offsetPosition.x
-      value: -0.04
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4525550075608807900, guid: 6eef3a5d83438a3469d1e2646152c70f,
         type: 3}
       propertyPath: offsetPosition.z
-      value: 0.04
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4656920421258246499, guid: 6eef3a5d83438a3469d1e2646152c70f,
         type: 3}
@@ -435,6 +440,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.02999375
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029626788133483323, guid: 6eef3a5d83438a3469d1e2646152c70f,
+        type: 3}
+      propertyPath: m_Data.m_MaintainOffset
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6497732571162899452, guid: 6eef3a5d83438a3469d1e2646152c70f,
         type: 3}
@@ -501,13 +511,18 @@ PrefabInstance:
     - target: {fileID: 8995531436596758046, guid: 6eef3a5d83438a3469d1e2646152c70f,
         type: 3}
       propertyPath: neckShoulderDistance.z
-      value: -0.15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8995531436596758046, guid: 6eef3a5d83438a3469d1e2646152c70f,
         type: 3}
       propertyPath: avatarTrackingReferences
       value: 
       objectReference: {fileID: 3081192460113507942}
+    - target: {fileID: 8995531436596758046, guid: 6eef3a5d83438a3469d1e2646152c70f,
+        type: 3}
+      propertyPath: headNeckDirectionVector.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8995531436596758046, guid: 6eef3a5d83438a3469d1e2646152c70f,
         type: 3}
       propertyPath: rightRotationHeightFactor
@@ -558,13 +573,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3444175152561107260}
     m_Modifications:
+    - target: {fileID: 1027730695, guid: b0d64f917d2447e4f85037ad6283d5bf, type: 3}
+      propertyPath: m_Name
+      value: BodyOffset
+      objectReference: {fileID: 0}
     - target: {fileID: 1027730696, guid: b0d64f917d2447e4f85037ad6283d5bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.4486682e-14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1027730696, guid: b0d64f917d2447e4f85037ad6283d5bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.11448517
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1027730696, guid: b0d64f917d2447e4f85037ad6283d5bf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -792,6 +811,11 @@ PrefabInstance:
     - target: {fileID: 5517618425911502283, guid: b0d64f917d2447e4f85037ad6283d5bf,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690563873827004068, guid: b0d64f917d2447e4f85037ad6283d5bf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7552204851892433321, guid: b0d64f917d2447e4f85037ad6283d5bf,
