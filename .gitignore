@@ -2,7 +2,8 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-[Ll]ibrary/
+Library/
+!Library/PackageCache/com.ucl.ubiq@6fd899cd2e/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
@@ -11,6 +12,7 @@
 [Uu]ser[Ss]ettings/
 UbiqURP_clone_0/
 UbiqURP_clone_1/
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
