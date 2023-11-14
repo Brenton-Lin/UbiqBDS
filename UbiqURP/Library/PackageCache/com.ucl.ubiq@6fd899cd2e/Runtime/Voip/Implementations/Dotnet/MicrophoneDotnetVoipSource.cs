@@ -264,7 +264,7 @@ namespace Ubiq.Voip.Implementations.Dotnet
                 // Null means use the default recording device
                 //adding microphone check to fix block on no microphone detected error
                 //There can be no default recording device now and we won't just crash on a build.
-                //Testing Gitignore
+                //Testing Gitignore PART 2!!!
 
                 if (Microphone.devices.Length > 0) {
                     microphoneListener.Start(null, 10, 16000, 512);
