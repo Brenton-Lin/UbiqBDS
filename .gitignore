@@ -3,7 +3,9 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 UbiqURP/Library/*
-!Library/PackageCache/
+!UbiqURP/Library/PackageCache/
+UbiqURP/Library/PackageCache/*
+!UbiqURP/Library/PackageCache/com.ucl.ubiq@6fd899cd2e
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
