@@ -18,7 +18,10 @@ namespace Ubiq.Avatars
     public class AvatarManager : MonoBehaviour
     {
         public PrefabCatalogue avatarCatalogue;
-        public GameObject avatarPrefab;
+        public bool isVR = true;
+        public GameObject vrAvatarPrefab;
+        public GameObject desktopAvatarPrefab;
+        public GameObject selectedPrefab;
         public AvatarHints hints;
 
         /// <summary>
@@ -78,7 +81,7 @@ namespace Ubiq.Avatars
 
             RoomClient.OnPeerUpdated.AddListener(OnPeerUpdated);
 
-            UpdateLocalAvatar();
+            //UpdateLocalAvatar();
         }
 
         private void Update()
@@ -144,7 +147,7 @@ namespace Ubiq.Avatars
         private void UpdateLocalAvatar()
         {
             // If we have an existing instance, but it is the wrong prefab, destroy it so we can start again
-            if (spawnedPrefab && spawnedPrefab != avatarPrefab)
+            if (spawnedPrefab && spawnedPrefab != selectedPrefab)
             {
                 // Spawned with peer scope so callback is immediate
                 spawner.Despawn(spawned);
@@ -153,19 +156,32 @@ namespace Ubiq.Avatars
                 spawnedPrefab = null;
             }
 
+            if (!spawnedPrefab)
+            {
+                //here we can set our logic to spawn a desktop or VR avatar.
+                if (isVR)
+                {
+                    selectedPrefab = vrAvatarPrefab;
+                    
+                }
+                else
+                {
+                    selectedPrefab = desktopAvatarPrefab;
+                }
+
+                // Spawned with peer scope so callback is immediate
+                spawned = spawner.SpawnWithPeerScope(selectedPrefab);
+                spawnedPrefab = selectedPrefab;
+            }
+
             // Avatars require a prefab. If missing, it means the remote player does not want an avatar.
-            if (!avatarPrefab)
+            if (!selectedPrefab)
             {
                 return;
             }
 
             // Create an instance of the correct prefab for this avatar
-            if (!spawnedPrefab)
-            {
-                // Spawned with peer scope so callback is immediate
-                spawned = spawner.SpawnWithPeerScope(avatarPrefab);
-                spawnedPrefab = avatarPrefab;
-            }
+            
         }
 
         private void OnPeerUpdated(IPeer peer)
@@ -188,7 +204,11 @@ namespace Ubiq.Avatars
             }
             return null;
         }
-
+        //toggle VR flag for AvatarManager
+        public void SetVRFlag(bool isVR)
+        {
+            this.isVR = isVR;
+        }
         /// <summary>
         /// Finds the first avatar (if any) associated with the Peer
         /// </summary>
