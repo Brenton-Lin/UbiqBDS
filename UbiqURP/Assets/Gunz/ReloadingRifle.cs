@@ -51,6 +51,8 @@ public class ReloadingRifle : SimpleGun
             magRemoved = false;
         }
 
+        // turn off collider push interaction when it's snapped on... FUCK OFF
+
 
 
         // if mag in gun, mag's in gun
