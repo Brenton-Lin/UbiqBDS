@@ -58,6 +58,18 @@
       "type": "vector2"
     },
     {
+      "name": "/actions/default/in/Jump",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/JoystickClick",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/XButton",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
