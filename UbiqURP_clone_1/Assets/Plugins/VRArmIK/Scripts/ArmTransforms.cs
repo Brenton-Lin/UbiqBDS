@@ -5,7 +5,7 @@ namespace VRArmIK
 	public class ArmTransforms : MonoBehaviour
 	{
 		public Transform upperArm, lowerArm, wrist1, wrist2, hand;
-
+		public GameObject handObject;
 		public float upperArmLength => distance(upperArm, lowerArm);
 		public float lowerArmLength => distance(lowerArm, hand);
 		public float armLength => upperArmLength + lowerArmLength;
@@ -20,6 +20,7 @@ namespace VRArmIK
 		{
 			PoseManager.Instance.onCalibrate += updateArmLengths;
 			updateArmLengths();
+			
 		}
 
 		void updateArmLengths()

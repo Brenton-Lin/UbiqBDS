@@ -2,11 +2,9 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-UbiqURP/Library/*
-!UbiqURP/Library/PackageCache/
-UbiqURP/Library/PackageCache/*
-!UbiqURP/Library/PackageCache/com.ucl.ubiq@6fd899cd2e
+
 [Tt]emp/
+UbiqURP/Assets/EnvironmentAssets/*
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
@@ -14,6 +12,11 @@ UbiqURP/Library/PackageCache/*
 [Uu]ser[Ss]ettings/
 UbiqURP_clone_0/
 UbiqURP_clone_1/
+
+UbiqURP/Library/*
+!UbiqURP/Library/PackageCache/
+UbiqURP/Library/PackageCache/*
+!UbiqURP/Library/PackageCache/com.ucl.ubiq@6fd899cd2e
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
