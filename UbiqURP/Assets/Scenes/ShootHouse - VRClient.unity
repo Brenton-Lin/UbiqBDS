@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.011
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.2784314, g: 0.35686275, b: 0.34509805, a: 1}
+  m_AmbientSkyColor: {r: 0.4245283, g: 0.33718574, b: 0.2743414, a: 1}
   m_AmbientEquatorColor: {r: 0.22745098, g: 0.2509804, b: 0.26666668, a: 1}
   m_AmbientGroundColor: {r: 1.5058823, g: 1.3876193, b: 1.135325, a: 1}
   m_AmbientIntensity: 0.99
@@ -11833,7 +11833,7 @@ PrefabInstance:
     - target: {fileID: 1206544753365771222, guid: 33cb6d2a29abed346b39b957a9e24d34,
         type: 3}
       propertyPath: m_Name
-      value: UbiqPlayer
+      value: DesktopPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 1206544753365771222, guid: 33cb6d2a29abed346b39b957a9e24d34,
         type: 3}
@@ -15511,7 +15511,7 @@ Terrain:
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 25.3
-  m_DetailObjectDensity: 1
+  m_DetailObjectDensity: 0.391
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
