@@ -8,9 +8,6 @@ TagManager:
   - Interactable
   - Magazine
   - Flashlight
-  - projectile
-  - FxTemporaire
-  - SnapZoneSpawn
   layers:
   - Default
   - TransparentFX

@@ -1762,11 +1762,6 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.13
       objectReference: {fileID: 0}
-    - target: {fileID: 8407923664845045259, guid: 4b31a8fec775487449f2e9e977953e54,
-        type: 3}
-      propertyPath: m_TagString
-      value: SnapZoneSpawn
-      objectReference: {fileID: 0}
     - target: {fileID: 8407923665379814194, guid: 4b31a8fec775487449f2e9e977953e54,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1792,21 +1787,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interactions.SnapZone
       objectReference: {fileID: 0}
-    - target: {fileID: 8407923665924605217, guid: 4b31a8fec775487449f2e9e977953e54,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 8407923665924606686, guid: 4b31a8fec775487449f2e9e977953e54,
         type: 3}
       propertyPath: snapValidity.field
       value: 
       objectReference: {fileID: 1243750929629170789}
-    - target: {fileID: 8407923665924606686, guid: 4b31a8fec775487449f2e9e977953e54,
-        type: 3}
-      propertyPath: autoSnapThrownObjects
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8407923665924606686, guid: 4b31a8fec775487449f2e9e977953e54,
         type: 3}
       propertyPath: initialSnappedInteractable
