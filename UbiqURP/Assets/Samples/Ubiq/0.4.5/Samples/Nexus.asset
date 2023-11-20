@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9258ee9d68b597d40ac401b2c1f8c3a1, type: 3}
   m_Name: Nexus
   m_EditorClassIdentifier: 
-  listenOnIp: 
-  listenOnPort: 
-  sendToIp: localhost
-  sendToPort: 8009
+  listenOnIp: localhost
+  listenOnPort: 8080
+  sendToIp: 192.168.0.100
+  sendToPort: 8080
   type: 0
   platforms:
   - platform: 17
