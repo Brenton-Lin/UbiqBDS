@@ -1,17 +1,20 @@
-
-
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using Ubiq.Messaging;
+using UnityEditor.Rendering.LookDev;
+using UnityEngine;
+using static UnityEngine.UI.GridLayoutGroup;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
 
-public class PhysicsObject : NetworkedObject
+public class NetworkedRifle : NetworkedObject
 {
+
     public NetworkContext context;
     public bool owner;
     public bool use;
-    public ParticleSystem testParticles;
     private Rigidbody rb;
+    [SerializeField]
+    public RifleAndSnapReload gun;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,17 +22,17 @@ public class PhysicsObject : NetworkedObject
         rb = GetComponent<Rigidbody>();
     }
 
-    public Vector3 lastPosition;
+    Vector3 lastPosition;
 
     // Update is called once per frame
     void Update()
     {
-        //Network Physics
+
         if (lastPosition != transform.localPosition)
         {
-            
+
             lastPosition = transform.localPosition;
-            if (owner) 
+            if (owner)
             {
                 context.SendJson(new Message()
                 {
@@ -38,34 +41,22 @@ public class PhysicsObject : NetworkedObject
                     clearOwners = false,
                     isKinematic = true,
                     use = use
-                }) ;
+                });
             }
             else
             {
-               
+
             }
-            
+
         }
         else
         {
-            
-            
-        }
-        //NetworkedEvents
-        if (use)
-        {
-            DoUse();
-            use = false;
-        }
-        //Object has stopped moving, turn isKinematic off
-        if (rb != null)
-        {
-            if (rb.velocity.magnitude == 0)
-            {
-                rb.isKinematic = false;
 
-            }
+
         }
+
+        use = false;
+        
     }
 
     private struct Message
@@ -76,15 +67,18 @@ public class PhysicsObject : NetworkedObject
         public bool isKinematic;
         public bool use;
     }
-    public void SetOwner() { owner = true; }
 
-    public void UseObject()
+    public void DoUse() 
     {
-        use = true;
+        Debug.Log("Trigger pulled");     
+        if (gun.magInGun)
+        {
+            Debug.Log("Shot");
+            gun.Shoot();
+            use = true;
+        }
     }
 
-    public virtual void DoUse() { }
-    
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
         // Parse the message
@@ -96,11 +90,20 @@ public class PhysicsObject : NetworkedObject
         owner = m.clearOwners;
         // Make sure the logic in Update doesn't trigger as a result of this message
         lastPosition = transform.localPosition;
-        if(rb != null)
+        if (rb != null)
         {
             rb.isKinematic = m.isKinematic;
         }
-        
-        use = m.use;    
+
+        use = m.use;
+        Debug.Log("Got message. Use value: " + m.use);
+        if (m.use) 
+        { 
+            DoUse();
+            Debug.Log("Shot over network");
+        }
     }
+
+
+
 }

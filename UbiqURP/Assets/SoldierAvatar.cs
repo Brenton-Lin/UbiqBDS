@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Ubiq.Avatars;
 using Ubiq.Samples;
 using UnityEngine;
-using VRArmIK;
 
 public class SoldierAvatar : MonoBehaviour
 {
@@ -11,9 +10,7 @@ public class SoldierAvatar : MonoBehaviour
     public Transform torso;
     public Transform leftHand;
     public Transform rightHand;
-    public bool isLocal;
     public Ubiq.Avatars.Avatar avatar;
-   
     /*
     public Renderer torsoRenderer;
     public Renderer leftHandRenderer;
@@ -21,8 +18,6 @@ public class SoldierAvatar : MonoBehaviour
     */
     public Renderer headRenderer;
     public Renderer legRenderer;
-    public Renderer leftHandRenderer;
-    public Renderer rightHandRenderer;
 
     public Transform baseOfNeckHint;
 
@@ -54,8 +49,12 @@ public class SoldierAvatar : MonoBehaviour
         {
             texturedAvatar.OnTextureChanged.AddListener(TexturedAvatar_OnTextureChanged);
         }
-        StartCoroutine(SetLocalVisuals());
-        
+
+        if (avatar.IsLocal)
+        {
+            headRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+            legRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+        }
 
     }
 
@@ -104,34 +103,15 @@ public class SoldierAvatar : MonoBehaviour
     {
         //Not the most efficient placement, but the IsLocal flag is only set in the Avatar Manager, after the avatar is spawned and enabled
         //Maybe make a method that we can call from the Avatar manager.
-        
-
-    }
-    private void Start()
-    {
-        
-    }
-
-    IEnumerator SetLocalVisuals()
-    {
-        yield return new WaitForSeconds(1);
         if (avatar.IsLocal)
         {
-            isLocal = true;
             headRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
             legRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
-            ArmTransforms[] arms = GetComponentsInChildren<ArmTransforms>();
-            foreach(var arm in arms)
-            {
-                arm.handObject.SetActive(false);
-                
-            }
-
         }
+
     }
 
-
-
+    
 
     // private Vector3 handsFwdStore;
 

@@ -46,14 +46,14 @@ public class VRTKHandController : HandController
 
     public void UpdateGripState()
     {
-        //No longer a need for Ubiq's desktop controls
-        /*if (desktopTrigger.Value)
+        if (desktopTrigger.Value)
         {
             TriggerState = desktopTrigger.Value;
-        }*/
-        
-        TriggerState = triggerButtonState.Value;
-        
+        }
+        else
+        {
+            TriggerState = triggerButtonState.Value;
+        }
         GripValue = gripState.Value;
         
         //Debug.Log("VRTK Controller Update");
