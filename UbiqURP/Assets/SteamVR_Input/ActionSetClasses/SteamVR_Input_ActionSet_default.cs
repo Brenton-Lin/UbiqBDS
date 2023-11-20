@@ -121,6 +121,30 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean Jump
+        {
+            get
+            {
+                return SteamVR_Actions.default_Jump;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean JoystickClick
+        {
+            get
+            {
+                return SteamVR_Actions.default_JoystickClick;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean XButton
+        {
+            get
+            {
+                return SteamVR_Actions.default_XButton;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
