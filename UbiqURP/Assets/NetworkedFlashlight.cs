@@ -13,4 +13,5 @@ public class NetworkedFlashlight : PhysicsObject
         flashlight.ClickClick();
         flashlight.ClickClick();
     }
+
 }
