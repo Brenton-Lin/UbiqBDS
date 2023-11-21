@@ -6,9 +6,7 @@ using Zinnia.Action;
 
 public class Flashlight : MonoBehaviour
 {
-    public Vector2Action sliderPush;
     public BooleanAction buttonPress;
-    public BooleanAction switchGrip;
     public GameObject light;
 
     private bool lit = false;
@@ -17,7 +15,6 @@ public class Flashlight : MonoBehaviour
     bool last;
     private int clicked = 0;
 
-    public TextMeshProUGUI text;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +24,7 @@ public class Flashlight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Debug values in VR with Canvas text
-        text.text = this.transform.rotation.ToString();
+
 
 /*        Debug.Log(last);
         if (buttonPress.Value != last)
