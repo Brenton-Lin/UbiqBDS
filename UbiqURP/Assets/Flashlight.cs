@@ -9,7 +9,7 @@ public class Flashlight : MonoBehaviour
     public BooleanAction buttonPress;
     public GameObject light;
 
-    private bool lit = false;
+    public bool lit = false;
 
     private bool click = false;
     bool last;
