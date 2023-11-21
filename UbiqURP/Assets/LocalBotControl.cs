@@ -46,7 +46,7 @@ public class LocalBotControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (owner && !dead)
+        if (!dead)
         {
             timer -= Time.deltaTime;
             if (timer < 0.0f)
