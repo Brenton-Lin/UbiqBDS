@@ -26,34 +26,47 @@ namespace Ubiq.Avatars
         private void Start()
         {
             //Finds the VRTK player controller rather than the Ubiq
-            var pcs = FindObjectsOfType<TrackedAliasFacade>(includeInactive: true);
+            var pcs = FindObjectsOfType<TrackedAliasFacade>(includeInactive: false);
 
             if (pcs.Length == 0)
             {
-                Debug.LogWarning("No VRTK player controller found");
+                Debug.LogWarning("No VRTK player controller found, assuming desktop client!");
+                //let Avatar manager know to use the desktop avatar prefab.
+                GetComponent<AvatarManager>().SetVRFlag(false);
+                
+                //no VRTK controller found, so we should have disabled VRTK and enabled a desktop client
+                //now setup the transform providers so that all nodes are just the main camera.
+                var desktopCamera = Camera.main.transform;
+                SetTransformProvider(headPositionNode, headRotationNode, desktopCamera);
+                SetTransformProvider(leftHandPositionNode, leftHandRotationNode, desktopCamera);
+                SetTransformProvider(leftWristPositionNode, leftWristRotationNode, desktopCamera);
+                SetTransformProvider(rightHandPositionNode, rightHandRotationNode, desktopCamera);
+                SetTransformProvider(rightWristPositionNode, rightWristRotationNode, desktopCamera);
             }
             else if (pcs.Length > 1)
             {
                 Debug.LogWarning("Multiple VRTK player controllers found. Using: " + pcs[0].name);
             }
+            else //Just one player controller found
+            {
+                var pc = pcs[0];
+                //Sets the transform to track for the head, the transform of the first camera object in ubiq players found in scene.
+                //Now we're just searching for a Unity Camera so the code should work from here.
+                SetTransformProvider(headPositionNode, headRotationNode,
+                    pc.transform.Find("Aliases/HeadsetAlias"));
 
-            var pc = pcs[0];
-            //Sets the transform to track for the head, the transform of the first camera object in ubiq players found in scene.
-            //Now we're just searching for a Unity Camera so the code should work from here.
-            SetTransformProvider(headPositionNode, headRotationNode,
-                pc.transform.Find("Aliases/HeadsetAlias"));
+                var hcs = pc.GetComponentsInChildren<VRTKHandController>();
 
-            var hcs = pc.GetComponentsInChildren<VRTKHandController>();
+                GetLeftHand(hcs, out var leftHand, out var leftWrist, out var leftHc);
+                SetTransformProvider(leftHandPositionNode, leftHandRotationNode, leftHand);
+                SetTransformProvider(leftWristPositionNode, leftWristRotationNode, leftWrist);
+                SetGripProvider(leftGripNode, leftHc);
 
-            GetLeftHand(hcs, out var leftHand, out var leftWrist, out var leftHc);
-            SetTransformProvider(leftHandPositionNode, leftHandRotationNode, leftHand);
-            SetTransformProvider(leftWristPositionNode, leftWristRotationNode, leftWrist);
-            SetGripProvider(leftGripNode, leftHc);
-
-            GetRightHand(hcs, out var rightHand, out var rightWrist, out var rightHc);
-            SetTransformProvider(rightHandPositionNode, rightHandRotationNode, rightHand);
-            SetTransformProvider(rightWristPositionNode, rightWristRotationNode, rightWrist);
-            SetGripProvider(rightGripNode, rightHc);
+                GetRightHand(hcs, out var rightHand, out var rightWrist, out var rightHc);
+                SetTransformProvider(rightHandPositionNode, rightHandRotationNode, rightHand);
+                SetTransformProvider(rightWristPositionNode, rightWristRotationNode, rightWrist);
+                SetGripProvider(rightGripNode, rightHc);
+            }
         }
 
         private void GetLeftHand(VRTKHandController[] handControllers,

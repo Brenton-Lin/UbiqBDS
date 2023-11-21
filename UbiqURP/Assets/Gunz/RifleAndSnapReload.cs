@@ -7,8 +7,8 @@ public class RifleAndSnapReload : SimpleGun
 {
     public GameObject rifle;
 
-    public bool magInGun = false;
-    public bool use;
+    private bool magInGun = false;
+
     
 
     // Start is called before the first frame update
@@ -20,17 +20,14 @@ public class RifleAndSnapReload : SimpleGun
     // Update is called once per frame
     void Update()
     {
-        use = false;
+
     }
 
     public void ShootRifle()
     {
-        Debug.Log("Trigger pulled");
         if (magInGun)
         {
-            Debug.Log("Shot");
             Shoot();
-            use = true;
         }
     }
 

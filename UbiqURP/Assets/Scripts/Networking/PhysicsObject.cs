@@ -19,7 +19,7 @@ public class PhysicsObject : NetworkedObject
         rb = GetComponent<Rigidbody>();
     }
 
-    public Vector3 lastPosition;
+    Vector3 lastPosition;
 
     // Update is called once per frame
     void Update()
