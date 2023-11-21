@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.ubiqurp.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\monkn\\UnityStuff\\UbiqBDS\\UbiqURP_clone_1\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\brent\\Github\\Ubiq\\UbiqURP_clone_1\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "UbiqURP [Testing]"

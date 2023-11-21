@@ -74,6 +74,7 @@ namespace Ubiq.XR
 
         private void OnKeys()
         {
+            //edited to provide noclip feature to DesktopClient.
             Vector3 movement = new Vector3(0f, 0f, 0f);
             if (Input.GetKey(KeyCode.A))
             {
@@ -93,7 +94,7 @@ namespace Ubiq.XR
             }
             movement = movement.normalized * (movementSpeed) * Time.deltaTime;
             movement = headCamera.transform.TransformDirection(movement);
-            movement.y = 0f;
+            
 
             transform.position += movement;
         }
