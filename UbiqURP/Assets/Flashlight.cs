@@ -9,8 +9,10 @@ public class Flashlight : MonoBehaviour
     public BooleanAction buttonPress;
     public GameObject light;
 
-    private bool lit = false;
+    [SerializeField]
+    public bool lit = false;
 
+    [SerializeField]
     private bool click = false;
     bool last;
     private int clicked = 0;
