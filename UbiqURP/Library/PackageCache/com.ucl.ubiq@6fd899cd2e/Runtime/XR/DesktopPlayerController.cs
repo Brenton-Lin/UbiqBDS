@@ -75,7 +75,6 @@ namespace Ubiq.XR
         private void OnKeys()
         {
             Vector3 movement = new Vector3(0f, 0f, 0f);
-            //Vector3 cameraFacing = headCamera.transform.forward;
             if (Input.GetKey(KeyCode.A))
             {
                 movement += new Vector3(-1f, 0f, 0f);
@@ -87,16 +86,14 @@ namespace Ubiq.XR
             if (Input.GetKey(KeyCode.W))
             {
                 movement += new Vector3(0f, 0f, 1f);
-                
-                Debug.Log(movement);
             }
             if (Input.GetKey(KeyCode.S))
             {
                 movement += new Vector3(0f, 0f, -1f);
-                
             }
             movement = movement.normalized * (movementSpeed) * Time.deltaTime;
             movement = headCamera.transform.TransformDirection(movement);
+            movement.y = 0f;
 
             transform.position += movement;
         }
@@ -137,11 +134,10 @@ namespace Ubiq.XR
             // This can be effectively disabled by setting the animation curve to a constant high value.
 
             var headProjectionXZ = transform.InverseTransformPoint(headCamera.transform.position);
-            //headProjectionXZ.y = 0;
+            headProjectionXZ.y = 0;
             userLocalPosition.x += (headProjectionXZ.x - userLocalPosition.x) * Time.deltaTime * cameraRubberBand.Evaluate(Mathf.Abs(headProjectionXZ.x - userLocalPosition.x));
             userLocalPosition.z += (headProjectionXZ.z - userLocalPosition.z) * Time.deltaTime * cameraRubberBand.Evaluate(Mathf.Abs(headProjectionXZ.z - userLocalPosition.z));
-            //userLocalPosition.y = 0;
-            userLocalPosition.y = (headProjectionXZ.y - userLocalPosition.y) * Time.deltaTime * cameraRubberBand.Evaluate(Mathf.Abs(headProjectionXZ.y - userLocalPosition.y));
+            userLocalPosition.y = 0;
         }
 
         private void Update()
