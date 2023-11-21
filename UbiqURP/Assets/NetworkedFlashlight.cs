@@ -45,8 +45,8 @@ public class NetworkedFlashlight : NetworkedObject
                     rotation = transform.localRotation,
                     clearOwners = false,
                     isKinematic = true,
-                    use = use
-                });
+                    use = flashlight.lit
+                });;
             }
             else
             {
@@ -88,6 +88,12 @@ public class NetworkedFlashlight : NetworkedObject
         }
 
         use = m.use;
+
+        if (use)
+            flashlight.LightUp();
+        else
+            flashlight.LightOff();
+
     }
 
 
