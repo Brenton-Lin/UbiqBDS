@@ -7,7 +7,7 @@ public class SimpleGun : MonoBehaviour
     // Start is called before the first frame update
 
     public float range = 100f;
-    public float damage = 1f;
+    public float damage = 20f;
     public float fireRate = 1f;
     public float impactForce = 20f;
 
@@ -43,11 +43,19 @@ public class SimpleGun : MonoBehaviour
                 Debug.Log(hit.transform.name);
                 //Instantiate a HitEffect facing the user.
                 Instantiate(HitEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                TrackedShootingTarget target = hit.transform.GetComponent<TrackedShootingTarget>();
 
-                if(target != null)
+                //updating target trackers
+                TrackedShootingTarget target = hit.transform.GetComponent<TrackedShootingTarget>();
+                if(target)
                 {
                     target.HitTarget();
+                }
+
+                //doing damage
+                var hitBox = hit.transform.GetComponent<Hitbox>();
+                if(hitBox)
+                {
+                    hitBox.OnRaycastHit(this);
                 }
             }
         }

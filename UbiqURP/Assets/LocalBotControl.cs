@@ -13,6 +13,7 @@ public class LocalBotControl : MonoBehaviour
     public float checkInterval = 1;
     public NetworkContext context;
     public bool owner;
+    public bool dead = false;
 
     float timer = 0.0f;
 
@@ -45,17 +46,26 @@ public class LocalBotControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-        if(timer < 0.0f)
+        if (owner && !dead)
         {
-            float sqDistance = (testTarget.position - agent.transform.position).sqrMagnitude;
-            if(sqDistance < detectionDistance*detectionDistance) {
-                agent.destination = testTarget.position;
+            timer -= Time.deltaTime;
+            if (timer < 0.0f)
+            {
+                float sqDistance = (testTarget.position - agent.transform.position).sqrMagnitude;
+                if (sqDistance < detectionDistance * detectionDistance)
+                {
+                    agent.destination = testTarget.position;
+                }
+                timer = checkInterval;
+
             }
-            timer = checkInterval;
-            
+            animator.SetFloat("AgentSpeed", agent.velocity.magnitude);
         }
-        animator.SetFloat("AgentSpeed", agent.velocity.magnitude);
+        else
+        {
+            agent.velocity = new Vector3(0,0,0);
+        }
+        
 
         //update remote agents
         if(agent.velocity.magnitude != 0)
