@@ -8,23 +8,43 @@ using Ubiq.Messaging;
 public class LocalBotControl : MonoBehaviour
 {
     public Transform testTarget;
+    public Transform botEyes;
     NavMeshAgent agent;
     Animator animator;
+
     public float checkInterval = 1;
     public NetworkContext context;
     public bool owner;
     public bool dead = false;
 
+    // for use in AiState
+    public bool isFarFromPlayer = true;
+
     float timer = 0.0f;
 
-    //just using this for the demo, way better ways to do it later.
+    Vector3 directionToPlayer;
+    float angle;
+
+    // just using this for the demo, way better ways to do it later.
     public float detectionDistance = 5.0f;
+    public bool detectByDistance = false;
+
+    public bool detectByFov = true;
+    public float fieldOfViewAngle = 30f;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+
+
         context = NetworkScene.Register(this);
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+
+        directionToPlayer = testTarget.position - transform.position;
+        angle = Vector3.Angle(directionToPlayer, botEyes.transform.forward);
     }
 
     private struct Message
@@ -33,6 +53,9 @@ public class LocalBotControl : MonoBehaviour
         public Vector3 agentVelocity;
     }
 
+    // remote bot listener
+    // agentVelocity: speed of remote bot
+    // clearOwners: clears local 'owner' variable to prevent recursive remote messages
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
         var m = message.FromJson<Message>();
@@ -46,20 +69,38 @@ public class LocalBotControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // check if bot needs to move to a destination
         if (!dead)
         {
-            timer -= Time.deltaTime;
-            if (timer < 0.0f)
+            if (detectByDistance)
             {
-                float sqDistance = (testTarget.position - agent.transform.position).sqrMagnitude;
-                if (sqDistance < detectionDistance * detectionDistance)
+                timer -= Time.deltaTime;
+                if (timer < 0.0f)
+                {
+                    // get distance from bot to player
+                    float sqDistance = (testTarget.position - agent.transform.position).sqrMagnitude;
+                    if (sqDistance < detectionDistance * detectionDistance)
+                    {
+                        // move to player if in detection range
+                        agent.destination = testTarget.position;
+
+                    }
+                    timer = checkInterval;
+
+                }
+                animator.SetFloat("AgentSpeed", agent.velocity.magnitude);
+            }
+
+            if (detectByFov)
+            {
+                directionToPlayer = testTarget.position - transform.position;
+                angle = Vector3.Angle(directionToPlayer, botEyes.transform.forward);
+
+                if (angle < fieldOfViewAngle)
                 {
                     agent.destination = testTarget.position;
                 }
-                timer = checkInterval;
-
             }
-            animator.SetFloat("AgentSpeed", agent.velocity.magnitude);
         }
         else
         {
@@ -67,8 +108,8 @@ public class LocalBotControl : MonoBehaviour
         }
         
 
-        //update remote agents
-        if(agent.velocity.magnitude != 0)
+        // update remote agents
+        if (agent.velocity.magnitude != 0)
         {
             if (owner)
             {
@@ -79,7 +120,7 @@ public class LocalBotControl : MonoBehaviour
                 });
             }
         }
-        //tell remote agents to stop, since navmesh doesn't restart calculations unless zeroed out
+        // tell remote agents to stop, since navmesh doesn't restart calculations unless zeroed out
         if (agent.velocity.magnitude == 0)
         {
             if (owner)

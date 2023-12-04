@@ -92,7 +92,23 @@ namespace Ubiq.XR
             {
                 movement += new Vector3(0f, 0f, -1f);
             }
-            movement = movement.normalized * (movementSpeed) * Time.deltaTime;
+            if (Input.GetKey(KeyCode.Q))
+            {
+                movement += new Vector3(0f, 1f, 0f);
+            }
+            if (Input.GetKey(KeyCode.E))
+            {
+                movement += new Vector3(0f, -1f, 0f);
+            }
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                movement = movement.normalized * (movementSpeed * 2) * Time.deltaTime;
+            }
+            else
+            {
+                movement = movement.normalized * (movementSpeed) * Time.deltaTime;
+            }
+
             movement = headCamera.transform.TransformDirection(movement);
             
 
