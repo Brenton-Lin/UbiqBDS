@@ -1,4 +1,5 @@
 
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -38,9 +39,10 @@ public class SimpleGun : MonoBehaviour
             ShootEffect.Play();
             timeToNext = Time.time + 1f / fireRate;
             Vector3 direction = GetDirection();
-            if (Physics.Raycast(FirePoint.position, direction, out RaycastHit hit, float.MaxValue, Mask))
+
+            if (Physics.Raycast(FirePoint.position, direction, out RaycastHit hit))
             {
-                Debug.Log(hit.transform.name);
+                Debug.Log("hit: " + hit.transform.name);
                 //Instantiate a HitEffect facing the user.
                 Instantiate(HitEffect, hit.point, Quaternion.LookRotation(hit.normal));
 
@@ -57,6 +59,54 @@ public class SimpleGun : MonoBehaviour
                 {
                     hitBox.OnRaycastHit(this);
                 }
+            }
+        }
+    }
+
+    public void ShootBotLogic()
+    {
+        if (Time.time >= timeToNext)
+        {
+            ShootEffect.Play();
+            timeToNext = Time.time + 1f / fireRate;
+            Vector3 direction = GetDirection();
+
+            RaycastHit[] hits;
+            hits = Physics.RaycastAll(FirePoint.position, direction);
+
+            bool passedThroughSphere = false;
+            foreach (RaycastHit hit in hits.Reverse())
+            {
+                if (hit.collider.tag == "SuppressionSphere")
+                {
+                    hit.transform.SendMessage("HitByRay");
+                    Debug.Log("Suppressing");
+                    passedThroughSphere = true;
+                }
+                if (hit.collider.tag != "SuppressionSphere")
+                {
+                    Debug.Log("hit: " + hit.transform.name);
+
+                    //Instantiate a HitEffect facing the user.
+                    Instantiate(HitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+
+                    //updating target trackers
+                    TrackedShootingTarget target = hit.transform.GetComponent<TrackedShootingTarget>();
+                    if (target)
+                    {
+                        target.HitTarget();
+                    }
+
+                    //doing damage
+                    var hitBox = hit.transform.GetComponent<Hitbox>();
+                    if (hitBox)
+                    {
+                        hitBox.OnRaycastHit(this);
+                    }
+
+                    break;
+                }
+
             }
         }
     }

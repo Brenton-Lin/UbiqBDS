@@ -9,6 +9,7 @@ TagManager:
   - Magazine
   - Flashlight
   - TrackedBot
+  - SuppressionSphere
   layers:
   - Default
   - TransparentFX

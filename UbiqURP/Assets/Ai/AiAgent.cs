@@ -11,6 +11,7 @@ using UnityEngine.UIElements;
 public class AiAgent : MonoBehaviour
 {
     public bool isPlayerCharacter;
+    public bool friendly;
 
     // senses
     public AiSensor senses;
@@ -19,81 +20,62 @@ public class AiAgent : MonoBehaviour
     public int scanFrequency = 30;
     public List<AiAgent> targets;
 
-    public MultiAimConstraint headFocus;
-    public RigBuilder rigs;
+    // animator
+    Animator animator;
 
-    // team bool friendly is squad
-    public bool friendly;
+    // rig layers
+    public MultiAimConstraint eyeConstraint;
+    public DampedTransform eyeConstraintDamp;
+    public MultiAimConstraint weaponAimConstraint;
+    
+
+    public RigBuilder rigs;
 
     public AiAgent bestTarget;
     public AiAgent lastBestTarget;
 
-    // statemachine
+    public Transform gunTip;
+    public ReloadingRifle rifle;
+
     public AiStateMachine stateMachine;
     public AiStateId initialState;
-    public List<AiStateId> possibleStates;
+
+    public SuppressionSphere suppressionSphere;
 
     // Start is called before the first frame update
     void Start()
     {
+
         senses = GetComponent<AiSensor>();
-        headFocus.weight = 1.0f;
 
-        bestTarget = null;
-        targets = senses.ScanForEnemies(friendly);
-
-        scanInterval = 1.0f / scanFrequency;
-
-        stateMachine = new AiStateMachine(this);
-        stateMachine.RegisterState(new AiChasePlayerState());
-        stateMachine.ChangeState(initialState);
-
+        animator = GetComponent<Animator>();
         rigs = gameObject.GetComponent<RigBuilder>();
 
+        stateMachine = new AiStateMachine(this);
+        stateMachine.RegisterState(new AiShoot());
+
+        stateMachine.ChangeState(initialState);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        // stateMachine.Update();
-        scanTimer -= Time.deltaTime;
-        if (scanTimer < 0)
+        stateMachine.Update();
+        if (suppressionSphere != null && suppressionSphere.suppressed)
         {
-            scanTimer += scanInterval;
+            animator.SetBool("emergeFromCover", false);
+            animator.SetBool("takeCover", true);
             
-            targets = senses.ScanForEnemies(friendly);
+        }
+        if (suppressionSphere != null && !suppressionSphere.suppressed && animator.GetBool("takeCover") == true)
+        {
+            animator.SetBool("takeCover", false);
+            animator.SetBool("emergeFromCover", true);
         }
 
-        bestTarget = GetBestTarget();
-        if (bestTarget != null && lastBestTarget != bestTarget)
-        {
-            lastBestTarget = bestTarget;
-            var data = headFocus.data.sourceObjects;
-            data.Clear();
-            data.SetTransform(0, bestTarget.transform);
-            data.Add(new WeightedTransform(bestTarget.transform, 1));
-            headFocus.data.sourceObjects = data;
-            rigs.Build();
-                       
-        }
     }
 
-    private AiAgent GetBestTarget()
-    {
-        float closest = 9999f;
-        AiAgent target = null;
 
-        foreach (AiAgent agent in targets)
-        {
-            float distance = Vector3.Distance(agent.transform.position, gameObject.transform.position);
-            if (distance < closest)
-            {
-                closest = distance;
-                target = agent;
-            }
-        }
-
-        return target;
-    }
 
 }

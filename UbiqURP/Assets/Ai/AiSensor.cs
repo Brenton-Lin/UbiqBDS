@@ -23,6 +23,15 @@ public class AiSensor : MonoBehaviour
     Mesh viewMesh;
     int count;
 
+    // check for suppression
+
+    // get nearest collider and assume its the cover
+
+    // while its being shot at, take cover
+
+    // raycast. check if it hits both a sphere around the bot and a collider that isn't the bot
+
+
     // the target must have a collider. y-bot has one on his hip, will want to add more colliders later
     public List<AiAgent> ScanForEnemies(bool team)
     {
@@ -110,8 +119,17 @@ public class AiSensor : MonoBehaviour
             return false;
         }
 
-        if (Physics.Linecast(origin, dest, losLayers)) // change this to 4 linecasts. two for eyes, two for peripherals.
+        // get side of object collider
+        // get other side of object collider
+
+/*        Collider collider = obj.GetComponent<Collider>();
+        float distanceFromCenter = collider.bounds.size.x / 2f;
+        Vector3 leftSideOfCollider = new Vector3(collider.bounds.center + distanceFromCenter_;
+        Vector3 rightSideOfCollider = collider.bounds.x - distanceFromCenter*/
+
+        if (Physics.Linecast(origin, dest, losLayers)) // change this to 3. center to center, center to left and right
         {
+            
 /*            Debug.Log("here3");
             Debug.Log("delta angle:" + (deltaAngle));
 */
