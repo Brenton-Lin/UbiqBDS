@@ -10,8 +10,11 @@ public class LocalBotControl : MonoBehaviour
     public Transform testTarget;
     NavMeshAgent agent;
     Animator animator;
+
+
     public float checkInterval = 1;
     public NetworkContext context;
+    public float destroyAfterSecs = 5;
     public bool owner;
     public bool dead = false;
 
@@ -31,6 +34,7 @@ public class LocalBotControl : MonoBehaviour
     {
         public bool clearOwners;
         public Vector3 agentVelocity;
+        public bool setDead;
     }
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
@@ -42,6 +46,14 @@ public class LocalBotControl : MonoBehaviour
     }
 
     public void SetOwner() { owner = true; }
+
+    public IEnumerator Kill()
+    {
+        dead = true;
+        yield return new WaitForSeconds(destroyAfterSecs);
+        Destroy(gameObject);
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -64,6 +76,7 @@ public class LocalBotControl : MonoBehaviour
         else
         {
             agent.velocity = new Vector3(0,0,0);
+            Kill();
         }
         
 
@@ -75,7 +88,8 @@ public class LocalBotControl : MonoBehaviour
                 context.SendJson(new Message
                 {
                     agentVelocity = agent.velocity,
-                    clearOwners = false
+                    clearOwners = false,
+                    setDead = this.dead
                 });
             }
         }
@@ -87,7 +101,8 @@ public class LocalBotControl : MonoBehaviour
                 context.SendJson(new Message
                 {
                     agentVelocity = agent.velocity,
-                    clearOwners = false
+                    clearOwners = false,
+                    setDead = this.dead
                 });
             }
         }

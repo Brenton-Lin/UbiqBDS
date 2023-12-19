@@ -1,0 +1,2774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>cd0a03d525894da49be9f2c2bd7a37d7</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2023-12-19T02:26:12.1798862-05:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.AssetCollector</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dade6187a8bf9d545922114f5313b3c7</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2023-12-19T02:26:12.1928892-05:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.AssetReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2dc921011d147944d8d04559e7817994</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2023-12-19T02:26:12.2048919-05:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.ClassReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b03ae05e6bbb77d47a39ea56d3256102</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/CollectionData.cs</fileName>
+    <timeStamp>2023-12-19T02:26:12.217895-05:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.CollectionData</string>
+      <string>UnitySweeper.TypeDate</string>
+      <string>UnitySweeper.IReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1a3de2cb198b4ee478d45caff03cc916</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2023-12-19T02:26:12.2298977-05:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.FindUnusedAssetsWindow</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>212bcc7895c7c8942b524adb1d846647</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2023-12-19T02:26:12.2419003-05:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.ShaderReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0108f3d4912089e42a54b593807ef8fe</guid>
+    <fileName>Assets/Plugins/VRArmIK/Demo/ArmRendererScaler.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6132972-05:00</timeStamp>
+    <typeFullName>
+      <string>ArmRendererScaler</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ec032af568a757340beb92f8fea7c65a</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/ArmTransforms.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6232984-05:00</timeStamp>
+    <typeFullName>
+      <string>VRArmIK.ArmTransforms</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4ead1ab284cddee4ba96204f5eb416da</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/AvatarVRTrackingReferences.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6232984-05:00</timeStamp>
+    <typeFullName>
+      <string>VRArmIK.AvatarVRTrackingReferences</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6deb6fe736bb1fa4f920aa26496ebab4</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/LocalVrTrackingInput.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6242988-05:00</timeStamp>
+    <typeFullName>
+      <string>VRArmIK.LocalVrTrackingInput</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>944b5c1596f68324a998b2ef2c5a363d</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/PoseManager.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6242988-05:00</timeStamp>
+    <typeFullName>
+      <string>VRArmIK.PoseManager</string>
+      <string>VRArmIK.PoseManager+OnCalibrateListener</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e31d3179dbae073468ca3ac97ec5c295</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/ShoulderPoser.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.625299-05:00</timeStamp>
+    <typeFullName>
+      <string>VRArmIK.ShoulderPoser</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>952d2a04990ab5d4e95d91263da82740</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/ShoulderTransforms.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6262991-05:00</timeStamp>
+    <typeFullName>
+      <string>VRArmIK.ShoulderTransforms</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fbf684afebadf9e448a63ab5775ad7c8</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/StaticOffsetTransform.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6262991-05:00</timeStamp>
+    <typeFullName>
+      <string>VRArmIK.StaticOffsetTransform</string>
+      <string>VRArmIK.StaticOffsetTransform+EulerOrder</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2042600d9ae259848ad6a09a5402a741</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/VRArmIK.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6313006-05:00</timeStamp>
+    <typeFullName>
+      <string>VRArmIK.VRArmIK</string>
+      <string>VRArmIK.VRArmIK+ArmIKElbowSettings</string>
+      <string>VRArmIK.VRArmIK+BeforePositioningSettings</string>
+      <string>VRArmIK.VRArmIK+ElbowCorrectionSettings</string>
+      <string>VRArmIK.VRArmIK+HandSettings</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3ba5e054e87d9864db4d157ceca462f3</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/VRTrackingReferences.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6323009-05:00</timeStamp>
+    <typeFullName>
+      <string>VRArmIK.VRTrackingReferences</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dd40c275b2b3c5042bee83817b9d5277</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/Utils/Extensions.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6293006-05:00</timeStamp>
+    <typeFullName>
+      <string>VRArmIK.LinqExtensions</string>
+      <string>VRArmIK.UtilsExtensions</string>
+      <string>VRArmIK.TransformExtensions</string>
+      <string>VRArmIK.MonoBehaviourExtensions</string>
+      <string>VRArmIK.LayerMaskExtensions</string>
+      <string>VRArmIK.VectorExtensions</string>
+      <string>VRArmIK.ListExtensions</string>
+      <string>VRArmIK.RandomExtensions</string>
+      <string>VRArmIK.EnumExtenstions</string>
+      <string>VRArmIK.EnumExtenstions+Enum`1</string>
+      <string>VRArmIK.UIExtensions</string>
+      <string>VRArmIK.IENumerableExtensions</string>
+      <string>VRArmIK.FloatExtensions</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a729eda56804e2043ac3fc58960a13bb</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/Utils/InspectorAttributes.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6303001-05:00</timeStamp>
+    <typeFullName>
+      <string>DisplayOnlyAttribute</string>
+      <string>LabelOverride</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>56770d9500874ac4d8980df3b398f7ee</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/Utils/VectorHelpers.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6303001-05:00</timeStamp>
+    <typeFullName>
+      <string>VectorHelpers</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3a301e6db22cc5747b54c20deee95547</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/Utils/Editor/LabelOverrideInspector.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6282997-05:00</timeStamp>
+    <typeFullName>
+      <string>ThisPropertyDrawer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>995d6e718b3990448939a03e8c25bbf2</guid>
+    <fileName>Assets/Plugins/VRArmIK/Scripts/Utils/Editor/ReadOnlyInspector.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6293006-05:00</timeStamp>
+    <typeFullName>
+      <string>DisplayOnlyInspector</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>545136fa0fcfcff428b0525611065ee8</guid>
+    <fileName>Assets/BotHealth.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.5216069-05:00</timeStamp>
+    <typeFullName>
+      <string>BotHealth</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c55c0e1f9983b304fb4963a15058b96e</guid>
+    <fileName>Assets/CustomAvatar.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.0377947-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Avatars.CustomAvatar</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>664ecad397b6efb40be6b7cc46141f06</guid>
+    <fileName>Assets/CustomAvatarManager.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.0377947-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Avatars.CustomAvatarManager</string>
+      <string>Ubiq.Avatars.CustomAvatarManager+AvatarDestroyedEvent</string>
+      <string>Ubiq.Avatars.CustomAvatarManager+AvatarCreatedEvent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b1c1887553035414c9c55505bf607ae6</guid>
+    <fileName>Assets/Flashlight.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.5256078-05:00</timeStamp>
+    <typeFullName>
+      <string>Flashlight</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>59771f69f86f77243ab25534782788b2</guid>
+    <fileName>Assets/Gun.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.6092954-05:00</timeStamp>
+    <typeFullName>
+      <string>Gun</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>830d9a665a1cbe046b012dc3926667c5</guid>
+    <fileName>Assets/LocalBotControl.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.5396113-05:00</timeStamp>
+    <typeFullName>
+      <string>LocalBotControl</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8d08cc270ee66c04480b88a772b456fd</guid>
+    <fileName>Assets/MagazineLockTrigger.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.5396113-05:00</timeStamp>
+    <typeFullName>
+      <string>MagazineLockTrigger</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>36b390771fab6b64aae01b50878379ab</guid>
+    <fileName>Assets/NetworkedFlashlight.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.5406114-05:00</timeStamp>
+    <typeFullName>
+      <string>NetworkedFlashlight</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ca797c6fb2643324ab82b604adffca75</guid>
+    <fileName>Assets/Ragdoll.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.6096266-05:00</timeStamp>
+    <typeFullName>
+      <string>Ragdoll</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>aee1c73d95cfb694eb83a2a703d698ec</guid>
+    <fileName>Assets/SoldierAvatar.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1159487-05:00</timeStamp>
+    <typeFullName>
+      <string>SoldierAvatar</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>df2f99a0e81bdee45a12e28b6fc0ee4f</guid>
+    <fileName>Assets/SwapGrip.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.6936472-05:00</timeStamp>
+    <typeFullName>
+      <string>SwapGrip</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2ba758b34d3455c4d8345158b5bfd8b2</guid>
+    <fileName>Assets/VRTargetFollow.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.9558002-05:00</timeStamp>
+    <typeFullName>
+      <string>VRTargetFollow</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>60b1ae1fbad37c84396f2d1ee009ef02</guid>
+    <fileName>Assets/Gunz/Magazine.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.5276077-05:00</timeStamp>
+    <typeFullName>
+      <string>Magazine</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ae3b1c24851b4104b8468c13bd88a44c</guid>
+    <fileName>Assets/Gunz/RealisticMagazinePath.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.5286086-05:00</timeStamp>
+    <typeFullName>
+      <string>RealisticMagazinePath</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>325fbaf6cc2f3054f9e66c3f0908e30f</guid>
+    <fileName>Assets/Gunz/ReloadingRifle.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.5296086-05:00</timeStamp>
+    <typeFullName>
+      <string>ReloadingRifle</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>df5fb0509c31d414bae99a261d75b927</guid>
+    <fileName>Assets/Gunz/RifleAndSnapReload.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.5306085-05:00</timeStamp>
+    <typeFullName>
+      <string>RifleAndSnapReload</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4315bd015ea075b4f8f736c9a37b5d84</guid>
+    <fileName>Assets/Scripts/ContourLines.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.6776439-05:00</timeStamp>
+    <typeFullName>
+      <string>ContourLines</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f7ac910b660fc474f9e8c79712f943a2</guid>
+    <fileName>Assets/Scripts/ContourMap.cs</fileName>
+    <timeStamp>2023-12-13T07:40:09.1459173-05:00</timeStamp>
+    <typeFullName>
+      <string>ContourMap</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d4b1493ba5509a240a929c45ea163d98</guid>
+    <fileName>Assets/Scripts/Hitbox.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.682645-05:00</timeStamp>
+    <typeFullName>
+      <string>Hitbox</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e38338b0ec454c348abb3595b5471753</guid>
+    <fileName>Assets/Scripts/TargetInfoTracker.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1099474-05:00</timeStamp>
+    <typeFullName>
+      <string>TargetInfoTracker</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bf1f9fc5b53a6094b8de3370af4f46d1</guid>
+    <fileName>Assets/Scripts/TrackedShootingTarget.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1109476-05:00</timeStamp>
+    <typeFullName>
+      <string>TrackedShootingTarget</string>
+      <string>TrackedShootingTarget+HitAction</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5d26f019f3b0120448fa01c204400ddb</guid>
+    <fileName>Assets/SteamVR_Input/SteamVR_Input_Actions.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.6916471-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>eb8a9f4a1ace50843b2822b6fa6dd45d</guid>
+    <fileName>Assets/SteamVR_Input/SteamVR_Input_ActionSets.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.078915-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>77939df23913059449414326df6622c3</guid>
+    <fileName>Assets/SteamVR_Input/SteamVR_Input_Initialization.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0799154-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>61a144f4019577a4684e3c370e321322</guid>
+    <fileName>Assets/VR Body/AnimateOnInput.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.722069-05:00</timeStamp>
+    <typeFullName>
+      <string>AnimationInput</string>
+      <string>AnimateOnInput</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>95a8098103f299b44be14d0de50e7fe3</guid>
+    <fileName>Assets/VR Body/IKFootSolver.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.8361291-05:00</timeStamp>
+    <typeFullName>
+      <string>IKFootSolver</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>933ae96d5faaa984baa041eef30e1c53</guid>
+    <fileName>Assets/VR Body/IKTargetFollowVRRig.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.8371296-05:00</timeStamp>
+    <typeFullName>
+      <string>VRMap</string>
+      <string>IKTargetFollowVRRig</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1fb5631cc1ab7e241bf640cfa2a52203</guid>
+    <fileName>Assets/Scripts/Hand/IHandController.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1009454-05:00</timeStamp>
+    <typeFullName>
+      <string>IGripState</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8296e2374f0ca8843a13cbf76f8a070c</guid>
+    <fileName>Assets/Scripts/Hand/PlayerHandInput.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1009454-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.XR.PlayerHandInput</string>
+      <string>Ubiq.XR.PlayerHandInput+RaycastHitEvent</string>
+      <string>Ubiq.XR.PlayerHandInput+RaycastMissEvent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>340f0278b1bb59747bc569308519afac</guid>
+    <fileName>Assets/Scripts/Hand/VRTKGripAvatarHintsProvider.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1019457-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Avatars.VRTKGripAvatarHintsProvider</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8fffc570143834a4393699d11dd57adc</guid>
+    <fileName>Assets/Scripts/Hand/VRTKHandController.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1029459-05:00</timeStamp>
+    <typeFullName>
+      <string>VRTKHandController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1a098fa3683081340a39cfee0ce2d9e9</guid>
+    <fileName>Assets/Scripts/Hand/VRTKUIRaycaster.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1029459-05:00</timeStamp>
+    <typeFullName>
+      <string>VRTKUIRaycaster</string>
+      <string>VRTKUIRaycaster+RaycastHitEvent</string>
+      <string>VRTKUIRaycaster+RaycastMissEvent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d872ff069b7dea045946df63ca4815a4</guid>
+    <fileName>Assets/Scripts/Interactables/FireArm.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1039462-05:00</timeStamp>
+    <typeFullName>
+      <string>FireArm</string>
+      <string>FireArm+Message</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>20a7c37595c125a4a9b814bf81476fc6</guid>
+    <fileName>Assets/Scripts/Interactables/Grabbable.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1049464-05:00</timeStamp>
+    <typeFullName>
+      <string>Grabbable</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b75a4f929335d7c439f0b198d26eff9e</guid>
+    <fileName>Assets/Scripts/Interactables/GrenadeMechanism.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1059464-05:00</timeStamp>
+    <typeFullName>
+      <string>GrenadeMechanism</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b63bb25143cdd6f48aabea96a682ba2a</guid>
+    <fileName>Assets/Scripts/Interactables/SimpleGun.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.6886462-05:00</timeStamp>
+    <typeFullName>
+      <string>SimpleGun</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ee790549e3ab9e94fa53f0673858feaa</guid>
+    <fileName>Assets/Scripts/Networking/CustomAvatarHelper.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1069464-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Avatars.CustomAvatarHelper</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f2c92b9a29fb5dc48a00a2282b1b31b3</guid>
+    <fileName>Assets/Scripts/Networking/NetworkedGrabbable.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.107947-05:00</timeStamp>
+    <typeFullName>
+      <string>NetworkedGrabbable</string>
+      <string>NetworkedGrabbable+Message</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>249a9045f8618b34c82a3a7b825654ac</guid>
+    <fileName>Assets/Scripts/Networking/NetworkedGrenade.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.107947-05:00</timeStamp>
+    <typeFullName>
+      <string>NetworkedGrenade</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>eafb1ba59288ae94e97a4df5fec3fed7</guid>
+    <fileName>Assets/Scripts/Networking/NetworkedGun.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1089467-05:00</timeStamp>
+    <typeFullName>
+      <string>NetworkedGun</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c167d8b465ef9234d84ad62ed42e5179</guid>
+    <fileName>Assets/Scripts/Networking/NetworkedObject.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1089467-05:00</timeStamp>
+    <typeFullName>
+      <string>NetworkedObject</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2c93f58d648cfc04184ace41155330fc</guid>
+    <fileName>Assets/Scripts/Networking/PhysicsObject.cs</fileName>
+    <timeStamp>2023-11-29T22:52:55.906963-05:00</timeStamp>
+    <typeFullName>
+      <string>PhysicsObject</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b894f6f57c99a1c46957650bc11d7824</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_AutoEnableVR_2018to2019.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1169491-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>524ac57f667bffd459f44076a7111efb</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_AutoEnableVR_2019plus.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.117949-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f3c98d5dbcd01ee4ba302d8f71a8d55a</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_AutoEnableVR_5.4to2018.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.118949-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5ba22c80948c94e44a82b9fd1b3abd0d</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_Editor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1199492-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>29abf75f7265ccb45b799eac4ab0ca94</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_Preferences.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1209502-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>67867a20919f7db45a2e7034fda1c28e</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_RenderModelEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1209502-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>80087fbbf7bf93a46bb4aea276b19568</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_SkyboxEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1219504-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d2244eee8a3a4784fb40d1123ff69301</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_UnitySettingsWindow.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1229505-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>73a0556bda803bf4e898751dcfcf21a8</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_Update.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1229505-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>656e3d05f0a289d4ab6f3d44f65c9b6d</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_UpdateModeEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1239509-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c30a2316e98e1dc4b97e432a1301f85c</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_CameraHelper.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.124951-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c4bc5db9c652ff8408b7cda0197f87f1</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_ForceSteamVRMode.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1259511-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>501eb8b744f73714fbe7dbdd5e3ef66e</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_GazeTracker.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1269507-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b2f511c1adaa1e94ebe7ca97bbcabd17</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_LaserPointer.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1279528-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ff4f36585e15b1942827390ff1a92502</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_TestThrow.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1299518-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8b18b36a995ecb04599f35c2741be8d5</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_TestTrackedCamera.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1319525-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9f2ad3c310c8826479de4aadf38385d7</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Action.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1869649-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>685af21914dfaf6459336bd9e8d1966c</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_ActionDirections.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1939658-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fff79524d13a43d4a995dccedb5085c4</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_ActionSet.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1939658-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>672d3f475539e5242af05932e937908b</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_ActionSet_Manager.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1949667-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7c3d755cf6cc936488afcb037b69341e</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Action_Boolean.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1869649-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a93d780c5506a6047bdaf1009c904c9c</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Action_In.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1879651-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9432398566c5b434685df0ceda0c736f</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Action_Out.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1889654-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>640f5aa82bb9c714696f842cb8727241</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Action_Pose.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1889654-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>02b1c930c612dbc469d258783cb8be34</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Action_Single.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1899652-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>84215d4427008924ebae4389d3e197e6</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Action_Skeleton.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1909658-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>31ab55ded67f66140977a544d93962ab</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Action_Vector2.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1919661-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f0d3d2010d570484eb65e1062a1b0e8e</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Action_Vector3.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1919661-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>48b01ecd7f9020044bab37ea4ac8fca3</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Action_Vibration.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1929662-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>27991c206a5e66147bb8ee3ef31c8bac</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_ActivateActionSetOnLoad.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1959669-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>16a9b39235339104889bf8e9178fc630</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Behaviour_Boolean.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1959669-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9a5fb0ca93b55ef4b8d54b512b103341</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Behaviour_Pose.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.196967-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8be882076514bc846a3ee15c689d0ac4</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Behaviour_Single.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1979673-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>00f6c0d7b5a00aa4a8d38a09a0480032</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Behaviour_Skeleton.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1989676-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9e4c0a04a2f4ee942ba9bd5d7ceb7266</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Behaviour_SkeletonCustom.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1989676-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>882e9db3ae3cfdf4793461eada0f54b6</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Behaviour_Vector2.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1999677-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a749ce0534daa1a4c9455e56191c9e93</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Behaviour_Vector3.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2009679-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2fd04576439b81a438e44cc006d35ebb</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_DefaultAction.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2009679-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>52de2eb8a319fcb4aa7dd51c4127f124</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_DefaultActionSet.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2019682-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>36fa5b356bc9b9f4792bb2c38b8d8b5f</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Input.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2029684-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a46ca29bcb0df3e4ea80651c2220adbf</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Input_ActionFile.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2039686-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b8b3d557389a8d84496ba0aadf2faad5</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Input_ActionScopes.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2039686-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d74d007b6f4b4674a9cfd320b9389b66</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Input_ActionSetUsages.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2049689-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7a2acf5cecdd8444c97bc579ba230dde</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Input_BindingFile.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2059691-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1178c003dbad4854a932b7bc84000ed5</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Input_Generator_Names.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2059691-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4d10323487cb44348b830bc017eb40b4</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Input_References.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2069696-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>edb9f777bb43d4d4e800dd8a82ba523c</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Input_Source.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2079695-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c2cbd60e2aad2b7468204d5a69489739</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Input_Sources.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2079695-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e90911e410742a1498a167540c7865bf</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Skeleton_Pose.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2089693-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e7418c7dd8f977d4e969202d3fa7e926</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_Skeleton_Poser.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2089693-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5811a8be2382cd440970c707dccb6fb0</guid>
+    <fileName>Assets/SteamVR/Input/SteamVR_UpdateModes.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.20997-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8d26b9eddedb33d48be044bb268a57c7</guid>
+    <fileName>Assets/SteamVR/Plugins/openvr_api.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0228893-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7fae0ddab09ac324c85494471274d6a4</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0428931-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1aaa8a3afb932fe478757c1e89cf0cd5</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Behaviour.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0428931-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6bca9ccf900ccc84c887d783321d27e2</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Camera.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0438933-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f5be45115742b07478e21c85fcc233ec</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_CameraFlip.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0448941-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5828f252c3c228f4b931f66c21e525c4</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_CameraMask.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0448941-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>49a86c1078ce4314b9c4224560e031b9</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Ears.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0458941-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c871825e556a1f140a5118ccf59e64d2</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_EnumEqualityComparer.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0458941-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>44cb57742f235524189e5d8af1c4f3cc</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Events.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0468945-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c9da270df5147d24597cc106058c1fa7</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_ExternalCamera.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0478946-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7294a236dff50fc44b22361c6187a574</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_ExternalCamera_LegacyManager.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0478946-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2ad1e469d4e3e04489f9a36419f1a4f8</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Fade.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0488952-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b2d1785fa0c551e408b6c94398847b76</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Frustum.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0498952-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ea22dba3baf2ecc4d886bf2444444228</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_IK.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0498952-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a5a6a70209b6e6345bfe18b02314a54e</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_LoadLevel.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0508957-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e7afc8c74d1f73b458705e0b946292a0</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Menu.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0518958-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>46fe9e0b23166454c8cb73040321d78c</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Overlay.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0518958-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1f0522eaef74d984591c060d05a095c8</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_PlayArea.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0528957-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e979227f3384fac4b8ca0b3550bf005c</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Render.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0538961-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5890e3cad70bea64d91aef9145ba3454</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_RenderModel.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0548971-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>68724c1151b69be48b992a00fd8d9b6b</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_RingBuffer.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0548971-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b7f99b5209bd86441a74f3b0c7aab951</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Settings.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0558966-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>13a43e992568b8e48b4bd489b9d96f40</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Skybox.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0568969-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7f4097fabec5d2b4da2b861750319952</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_SphericalProjection.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0568969-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>55da3adbb5d30254c97687991608dda0</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_TrackedCamera.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0578968-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d37c2cf88f7c59f4c8cf5d3812568143</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_TrackedObject.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0588973-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2578089a96464b348a5399c795afc7b7</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_TrackingReferenceManager.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0588973-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>be3c3a084f7b29b4880b42b4cfbf4d8f</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Utils.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0598978-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5162205b778d01647b0d6a2c523b2518</guid>
+    <fileName>Assets/SteamVR/WindowsHelper/SteamVR_Windows_Editor_Helper.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0729004-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1e3e13d3631d16848af56f518c0a5868</guid>
+    <fileName>Assets/SteamVR_Input/ActionSetClasses/SteamVR_Input_ActionSet_buggy.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0749005-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ef17f248e40af0d4c96b10d30dceb3a8</guid>
+    <fileName>Assets/SteamVR_Input/ActionSetClasses/SteamVR_Input_ActionSet_default.cs</fileName>
+    <timeStamp>2023-12-05T22:37:12.690647-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bbf1b05c7009a3c49a14472c40ee22c2</guid>
+    <fileName>Assets/SteamVR_Input/ActionSetClasses/SteamVR_Input_ActionSet_mixedreality.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0759182-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>806f37f3e41592642bc31ace0fd5085d</guid>
+    <fileName>Assets/SteamVR_Input/ActionSetClasses/SteamVR_Input_ActionSet_platformer.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0769129-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>51456fab034923e44ac13928d1a2c44c</guid>
+    <fileName>Assets/SteamVR_Input/ActionSetClasses/SteamVR_Input_ActionSet_ultimatexr.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.0779147-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7d66653e3bc59fe439a11263f2610a24</guid>
+    <fileName>Assets/VRTK.Tilia.Package.Importer/Editor/PackageImporter.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.9652897-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8922ed451d14d75478d2565754f0c719</guid>
+    <fileName>Assets/EnvironmentAssets - 11_20/Rocks and Boulders 2/Shaders/RotateGameObject.cs</fileName>
+    <timeStamp>2018-02-07T10:05:45-05:00</timeStamp>
+    <typeFullName>
+      <string>RotateGameObject</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>59250d64a1ce9a44891e9bb0b3d71e6b</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_BooleanEvent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1379537-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d77e49c3174e18045ab27a1029c6a977</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_PoseEvent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1399538-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f0abecbe8a5e4e04dab8f886e1d6d070</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_Pose_ConnectedChangedEvent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1389536-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bc42b626f4ef1264ebfc0393f40df5c9</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_Pose_DeviceIndexChangedEvent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1389536-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>62c981c44fe9a6046bb0766cb96bdf65</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_Pose_TrackingChangedEvent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1399538-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b8fd33c9d8ff2114a8b6a59629165318</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_SingleEvent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1409545-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c56ae57c82c46674ea85a60fd6ba9334</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_SkeletonEvent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1429551-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>431bf7eb5ceb24a448dc44a2ed8d8243</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_Skeleton_ConnectedChangedEvent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1419549-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7461d65099840d840af0e25e6afda525</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_Skeleton_TrackingChangedEvent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1419549-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>091545c123a858440b2e32a3f299a923</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_Vector2Event.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1439553-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>99c31ec1b21aa424987b0162f9971dc6</guid>
+    <fileName>Assets/SteamVR/Input/BehaviourUnityEvents/SteamVR_Behaviour_Vector3Event.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1439553-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>806facaa17de95d4794b0acbbad1268d</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_CopyExampleInputFiles.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1579583-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8c0dec2678a8ce94dbdd749500441172</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_ActionManifest_Manager.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1659606-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>074d66e09af4e46429424ca09a9c3402</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_ActionSetPropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1669605-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>779685f855764aa449874336c160b4d0</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Boolean_PropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.158959-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2800414421e3d124486646cbf8206a64</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_GenericPropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.158959-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7f01bda1d81aff44b8832e1779ef392f</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_In_PropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1599591-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bc5014b5bd4c9254885346ccb2479e34</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Out_PropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1609595-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6c580c8ee65b2064b9cecf9c8a56b126</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Pose_PropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1609595-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ef30f8b815c7563459f9bb661516015e</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_PropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1619598-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4830402dc20240e4ea78925fdf5cb924</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Single_PropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1629597-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>67e9f92e8ad511b47ac9bd0e49834d0f</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Skeleton_PropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1629597-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>44945f1de2d06c843bbacc0c37a431c2</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Vector2_PropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1639599-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>08029b867fa0bbf4bb41613c2ebb449e</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Vector3_PropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1649601-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6687413c4fe847b418c7a33716013e07</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Action_Vibration_PropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1649601-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>03dc30b5b3080b44ab840459bbaf7b78</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_EditorWindow.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1679607-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dcf3113e82474c541960a24c222f07b3</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_Generator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1689609-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4f3a55cce07b5da49ad2dfb86baea564</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_LiveWindow.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1699611-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7397a60f6d7fe3942bf26563dad77fe2</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Input_PostProcessBuild.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1699611-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4dc9de3af3d42194abc1380cc3a5cc61</guid>
+    <fileName>Assets/SteamVR/Input/Editor/SteamVR_Skeleton_PoserEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.1709612-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7434e43635fb2924583f5e0f2fb6ed3a</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/SnapTurn/SnapTurn.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8508501-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>897a09e95f3c16049a601ce6e13e5caa</guid>
+    <fileName>Assets/EnvironmentAssets - 11_20/CTI URP/CTI Runtime Components URP/Scripts/CTI_SRP_CustomWind.cs</fileName>
+    <timeStamp>2019-06-02T17:07:33-04:00</timeStamp>
+    <typeFullName>
+      <string>CTI.CTI_SRP_CustomWind</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1731d642c0b250b48bb8cdfb153d9792</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/BodyCollider.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2289743-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1f32883eed859804dbb0c5fedac91496</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/CircularDrive.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2299746-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ad77666522338cf49ba83b80b25e6476</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ComplexThrowable.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2299746-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8ca2cc563cc33f542a5d9f8f661184ba</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ControllerHoverHighlight.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2309746-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5f3294e06115d0047a2ac7659a11b168</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/CustomEvents.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2319752-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6f3bba2c36dd79242b3157dbcd876bf2</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DebugUI.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2319752-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5240357a2468cdc4291b266bee3cb9b9</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DestroyOnDetachedFromHand.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2329749-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>69cad530c565c714491a326c21accb90</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DestroyOnParticleSystemDeath.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2339757-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7ba84888c9d4c504cb752a3904551a6c</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DestroyOnTriggerEnter.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2339757-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>65ef702aaa09d3f46a75659678b1a711</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DistanceHaptics.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2349753-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4d1c07a6449b0ca439ee6fac5f6f7d83</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DontDestroyOnLoad.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2359761-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>88a2ccbdad9948c45b28f5e63902705b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/EnumFlags.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2359761-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ecd73422fbc4be54a9f4d8f3972f8579</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Equippable.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2369757-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6043f3be9a21bd74281f9770463bea00</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/FallbackCameraController.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2379762-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>99eaa65760d05f74b811106b4945924e</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/GrabTypes.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2379762-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>29e3e4511966ba94d8ba0b98c6c62f82</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Hand.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2389779-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2820b584f2917744bafbfd2f8f387225</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/HandCollider.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2399771-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1e75fe4b0c190eb4ba97e59f062510e9</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/HandPhysics.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2409777-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>817521c5973e4ee45905ee97df3c38ad</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/HapticRack.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2409777-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>eb6d6653511aff5409d0827d4e3b79ea</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/HideOnHandFocusLost.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2419772-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2c0e35ef0cc211b408d2d7e7eb0f850d</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/HoverButton.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2429774-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f5a1be5da1c87864582d778e52de4e9b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/IgnoreHovering.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2429774-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c9e05292e0d62b542ac5bba92674a86d</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/InputModule.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2439778-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b93b6a877adcbf94c89a9d6e0c0e844d</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Interactable.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.244978-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>78549ac336d4d37418a4d4e0d981f91f</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/InteractableDebug.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.244978-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c4153b26428ccf041950b92c057812a3</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/InteractableHoverEvents.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2459783-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c9f83db71b9a6764abf964ab7679f035</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ItemPackage.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2459783-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>57468e6cbae21894fa42c90413c294ff</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ItemPackageReference.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2469784-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>43e53a985809f0949b9a42cc2a6888c9</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ItemPackageSpawner.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2479788-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>49a60120b932b59409171f5ff611b639</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearAnimation.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2489788-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>634b98c3ef8bc6d4f834f80a4613a4a4</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearAnimator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2489788-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bb07dbf09f9933e49b22c82d8428c53b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearAudioPitch.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2499791-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5a3622562855c9a40a14846ffdc8bfe4</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearBlendshape.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2509791-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>13d876e5d485004448f3e7b57eece9ab</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearDisplacement.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2509791-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8c81a27fd18a29444be92481fe681f4b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearDrive.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2519793-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>46f8e9e70f68ee3418ad85992778c116</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearMapping.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2529795-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d9172bbb2e6dd7e4a86c0d1ea19b7e49</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ModalThrowable.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2529795-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>202a6e24b48d1684398409c47161adcb</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Player.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.25398-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1a125d9df683e2a49b12babced273360</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/PlaySound.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.25498-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>847a4fd831847974bb8d16b469b643e3</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/RenderModel.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.25498-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7d623a50b67320940b97e93e31d0a21b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SeeThru.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2559804-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0584375ad2f33ef4da0b276de8507487</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SleepOnAwake.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2569806-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f53662f45a4454944a06629fec9c941e</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SoundDeparent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2569806-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>32c1c9a5bbab2e54280027c0ecaf42db</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SoundPlayOneshot.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2579808-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6ad167161b0bf8e4d9c038db358e0a28</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SpawnAndAttachAfterControllerIsTracking.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2579808-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f4a03a51c550b92478a559cf694ce118</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SpawnAndAttachToHand.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2589815-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ffefbea063cab884ca33e5a449e5c22c</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Throwable.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2599817-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>53cd2ef2dd3d5d64e96af4420220d1d2</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/UIElement.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2609815-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ba42448c9a2fa44409034eead650b5f4</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Unparent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2609815-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d4dbb95c6efc21548ac6d079a65a2d50</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Util.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2619817-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>783750eec4c41da428b7651515146d14</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/VelocityEstimator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.2629821-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ea1001a6626353541ab4d4b39f4c3569</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Hints/Scripts/ControllerButtonHints.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.271984-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f2f2850d002f14a47bff32fdf73df53e</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/ArcheryTarget.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3089922-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d520699ed41daaf48b924d994ac87378</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/Arrow.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3099921-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d85480da87762944399dab6c99985eef</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/ArrowHand.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3109929-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f195fe0cc42f49241a3c7521a19fa350</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/ArrowheadRotation.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3109929-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>429a484b95998f84eaa98fa068caa5e9</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/Balloon.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3119932-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>667230ade3b20b641a0ba08bdfd760fc</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/BalloonColliders.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3129934-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ec82b6ce2e2435444a434107cddceb0b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/BalloonHapticBump.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3129934-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cc1b8e5b8c3365a49b0274fb637151d6</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/BalloonSpawner.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3139935-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>012bb97850e84ad4c890dcab506009bc</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/ExplosionWobble.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3139935-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f86ab2e727cd09f43849955c5b35f490</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/FireSource.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3149938-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>30032368544f1a341976db391b260507</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/Longbow.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3159941-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dc121f192dd724945a1998a9c1f1727d</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/SoundBowClick.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.3159941-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>68cfc2d5837cbbb4fadf8b044ca88bb1</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/BuggyBuddy.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.5462426-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>835b6b0bed899be43a580366974d84eb</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/BuggyController.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.547243-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2eafe1c4f43002f4a9ae978daba0d0f7</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/LockToPoint.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.5482432-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a97b732be32dc884885a1af270088489</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/trackCam.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.5772497-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9799564b983d9664b824f7b9b2ff8d88</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/trackObj.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.5782499-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0ca7ca2b4b28e184ea4ecc51ddd31f36</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/WheelDust.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.5942534-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>013214146096fa74898db952aa9b2da2</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Grenade/Grenade.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.5962539-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2e6e0fb6a756a434b9faeea744a9920c</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/JoeJeff/JoeJeff.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.7041162-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2c178cd2631c07944bc48d4c9d824edb</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/JoeJeff/JoeJeffController.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.7061165-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4614a07f51836eb48bfe11b75633be31</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/JoeJeff/JoeJeffGestures.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.7071167-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d8c45beb4f5e7a949a8b61f306ff7c66</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/JoeJeff/ProceduralHats.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.7121177-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fdc6e48706c13fa4a8f807ff0f16e9de</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/ButtonEffect.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8049672-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>80df3856ba408c944a3cf528cf7bad83</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/ButtonExample.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8059674-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>79e7ef0af37bbcb40ab89c4cc2481018</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/ControllerHintsExample.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8059674-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>294fb0b20d456c749966ea34ca82355a</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/CustomSkeletonHelper.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8069676-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>158d046322c150348bfed00c688d3142</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/FloppyHand.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8079681-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6a7c27a46b80a6445bffe44ea9e91cd0</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/FlowerPlanted.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8079681-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8bb563c4e716d2c4181e187d9be248db</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/InteractableExample.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8089683-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4390f3b73c731c846a0cc863c72d7a1e</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/Planting.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8099683-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f05229f3db0d24a4e9df9f11919f341a</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/RenderModelChangerUI.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8099683-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>48c26627b0786bd489db7ad471de1a5e</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/SkeletonUIOptions.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8109686-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>037de2161ddbc6f4e96de7dd85ea6686</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/TargetHitEffect.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8119689-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ec342cce029750947a79c83ea47c42b9</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/TargetMeasurement.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8119689-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>54a4af4cc6b48a9449034f15c9691985</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/URPMaterialSwitcher.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8129691-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e591913e9a140ee44b7837c4fd22aeb4</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Squishy/SquishyToy.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8199706-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b8d4cc6cf300b3e4bb1411c4e041030c</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/AllowTeleportWhileAttachedToHand.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8838574-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ebcc975aa3c1d5240936c86b600ca2a5</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/ChaperoneInfo.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8848579-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dc3be917a80086a48b97933694257f09</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/IgnoreTeleportTrace.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8848579-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f260935093f73f241bfaa1578e5e5506</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8858577-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a043c731a29ecd745a9270fbf002ee68</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportArc.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8868578-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>84a4f15a3179f1d4993aded11f4d0232</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportArea.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8868578-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c6bc348d47e14444f9ca466d8cf06d46</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportMarkerBase.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.887858-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e0135c95e70592e4fac2f29e7b78abcf</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportPoint.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8888582-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>eedfa54ef02254a428194e8de8e14d75</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportURPHelper.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.8888582-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b3cedb949dfc6b44aa88e1e82ba6471d</guid>
+    <fileName>Assets/UnityTechnologies/EffectExamples/Shared/Scripts/DecalDestroyer.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.2212564-05:00</timeStamp>
+    <typeFullName>
+      <string>DecalDestroyer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>01d79beb4399f964ea234855d877ee52</guid>
+    <fileName>Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ExtinguishableFire.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.2212564-05:00</timeStamp>
+    <typeFullName>
+      <string>ExtinguishableFire</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c63d71560c10e473ebc409185edd2c8c</guid>
+    <fileName>Assets/UnityTechnologies/EffectExamples/Shared/Scripts/GunAim.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.2222568-05:00</timeStamp>
+    <typeFullName>
+      <string>GunAim</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>422d8644426474cfd8b793ce3c107314</guid>
+    <fileName>Assets/UnityTechnologies/EffectExamples/Shared/Scripts/GunShoot.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.2232569-05:00</timeStamp>
+    <typeFullName>
+      <string>GunShoot</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4c111b630ead2a349b4c4cbf7a810085</guid>
+    <fileName>Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ParticleCollision.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.2232569-05:00</timeStamp>
+    <typeFullName>
+      <string>ParticleCollision</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1708b2ad8d149415d8ceffa3a0ae252f</guid>
+    <fileName>Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ParticleExamples.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.2242573-05:00</timeStamp>
+    <typeFullName>
+      <string>ParticleExamples</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3b87f472a8687453eac1a8091330b6d5</guid>
+    <fileName>Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ParticleMenu.cs</fileName>
+    <timeStamp>2023-12-05T22:39:51.2242573-05:00</timeStamp>
+    <typeFullName>
+      <string>ParticleMenu</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bd46264408280f64ca72fca9b3586dfd</guid>
+    <fileName>Assets/VRTK.Tilia.Package.Importer/Editor/ThirdParty/SimpleJSON/SimpleJSON.cs</fileName>
+    <timeStamp>2023-12-05T22:39:52.0099148-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4ba4d1cf73efa664ba22c85afac91c50</guid>
+    <fileName>Assets/VRTK.Tilia.Package.Importer/Editor/ThirdParty/SimpleJSON/SimpleJSONBinary.cs</fileName>
+    <timeStamp>2023-12-05T22:39:52.0109149-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>315250c24820312438a1726f3ac38373</guid>
+    <fileName>Assets/VRTK.Tilia.Package.Importer/Editor/ThirdParty/SimpleJSON/SimpleJSONDotNetTypes.cs</fileName>
+    <timeStamp>2023-12-05T22:39:52.0149167-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e21d223ed4f40394a960830e805e2533</guid>
+    <fileName>Assets/VRTK.Tilia.Package.Importer/Editor/ThirdParty/SimpleJSON/SimpleJSONUnity.cs</fileName>
+    <timeStamp>2023-12-05T22:39:52.0149167-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>44905e65e363a6a419889f4a78adebd6</guid>
+    <fileName>Assets/EnvironmentAssets - 11_20/CTI URP/CTI Runtime Components URP/Scripts/Editor/CTI_URPTransDrawer.cs</fileName>
+    <timeStamp>2020-05-23T09:56:00-04:00</timeStamp>
+    <typeFullName>
+      <string>CTI.CTI_URPTransDrawer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f42df5657a0798b43bbc873e443c636d</guid>
+    <fileName>Assets/EnvironmentAssets - 11_20/CTI URP/CTI Runtime Components URP/Scripts/Editor/CTI_URPWindDrawer.cs</fileName>
+    <timeStamp>2020-05-23T09:56:13-04:00</timeStamp>
+    <typeFullName>
+      <string>CTI.CTI_URPWindDrawer</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>453e1b0bc24ec68468e6655e08e28b09</guid>
+    <fileName>Assets/EnvironmentAssets - 11_20/CTI URP/CTI Runtime Components URP/Scripts/Editor/CTI_URP_ShaderGUI.cs</fileName>
+    <timeStamp>2020-05-23T09:55:28-04:00</timeStamp>
+    <typeFullName>
+      <string>CTI_URP_ShaderGUI</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f6d59e5703858334d9e6dec5c6f3cb01</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Boids/Boids.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0421641-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Boids.Boids</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>00491dba052c14b4192def219d05131d</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Boids/BoidsManager.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0441644-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Boids.BoidsManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d9e476082f8b7e14caf6dd8637f133b7</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Boids/BoidState.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0451645-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Boids.BoidState</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>78489913f449bf84986f2d9d5736e97e</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/AvatarDataGenerator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0461648-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Avatars.AvatarDataGenerator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fbea7e0aa669a27439a7ed710f2b4186</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/Bot.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.047165-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Bots.Bot</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5f9a213114058554381d9effcbd1f863</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/BotAgent.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0491658-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Bots.BotAgent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>918c67203be66094baaa634b6f854d04</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/BotsConfig.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.054167-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Bots.BotsConfig</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a080407c2e53b7d4f8c52714fd83459e</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/BotsMonitor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0551674-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Bots.BotsMonitor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>80c6a2f6189c5a84398c5b8ecc5c7063</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/JoinRoomClients.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.9059158-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.JoinRoomClients</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>73070efaa1016fc47a3b4023d9a33be2</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Readme.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.9116038-05:00</timeStamp>
+    <typeFullName>
+      <string>Readme</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3bca11e0534f4e742846c41cf3f1ff29</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Audio/AmbientSound.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.5332392-05:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1edb39aa169eb40cfa015393d5396847</guid>
+    <fileName>Assets/EnvironmentAssets - 11_20/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Scripts/CTI_CustomWind.cs</fileName>
+    <timeStamp>2023-02-26T07:19:16-05:00</timeStamp>
+    <typeFullName>
+      <string>CTI.CTI_CustomWind</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a6013210bd40b4cde9944fed4d9f8082</guid>
+    <fileName>Assets/EnvironmentAssets - 11_20/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Scripts/CTI_Utils.cs</fileName>
+    <timeStamp>2023-02-26T07:19:34-05:00</timeStamp>
+    <typeFullName>
+      <string>CTI.CTI_Utils</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7a400e148ef86bb4a8ecc10cfed1d462</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/Control/BotsController.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0561679-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Bots.BotsController</string>
+      <string>Ubiq.Samples.Bots.BotManagerProxy</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a19e308cf6dd8df44aa662c5f97f85e3</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/Control/BotsManager.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0571679-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Bots.BotsManager</string>
+      <string>Ubiq.Samples.Bots.BotsManager+MovingAverage</string>
+      <string>Ubiq.Samples.Bots.BotsManager+BotPeerEvent</string>
+      <string>Ubiq.Samples.Bots.BotsManager+SendMessageArguments</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7b5e060733134ed4486f5afeb5c47a12</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/Control/Messaging.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0581685-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Bots.Messaging.Message</string>
+      <string>Ubiq.Samples.Bots.Messaging.BotManagerSettings</string>
+      <string>Ubiq.Samples.Bots.Messaging.AddBots</string>
+      <string>Ubiq.Samples.Bots.Messaging.ClearBots</string>
+      <string>Ubiq.Samples.Bots.Messaging.Quit</string>
+      <string>Ubiq.Samples.Bots.Messaging.SendMessage</string>
+      <string>Ubiq.Samples.Bots.Messaging.BotManagerStatus</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7e23b77e244969d458f6a43fd52666b0</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/UI/BotInfoGizmo.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0629363-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Bots.BotInfoGizmo</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>50235b31b1072b34093d5363ab8bec0a</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/UI/BotsControlPanel.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0639366-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Bots.UI.BotsControlPanel</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d0dffbf16e20c094586ab41cdfd5c63f</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/Bots/UI/BotsManagerControl.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0639366-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Bots.UI.BotsManagerControl</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>43b04fe98f88bed4792a2ea839c6ec87</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Addressing/HelloWorldCube.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0669376-05:00</timeStamp>
+    <typeFullName>
+      <string>HelloWorldCube</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b54ef036aca45114fa1b238c54e0ad9a</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Addressing/HelloWorldCubeColour.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0679379-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.HelloWorldCubeColour</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0901c0c6ea7aa534489a3e2cfb1bb435</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Logging/LoggingDiagnostics.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0699384-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.UnitTests.Logging.LoggingDiagnostics</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>377aa20bb10c6b04a941ee7a7451fd46</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/NetworkedBehaviour/NetworkedBehaviourCube.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0729389-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.NetworkedBehaviourCube</string>
+      <string>Ubiq.Samples.NetworkedBehaviourCube+NestedClass</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7b2346f9c785cc340a6beef9156a190d</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Networking/ThroughputBenchmark.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0749396-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.ThroughputBenchmark</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>07144f00ebc0c7244995d21a0bb2f128</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Properties/PeerPropertyEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0779405-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Single.Properties.PeerPropertyEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c9639b8450629574cb219efbfa92ea11</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Questionnaire/Questionnaire.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0799406-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Single.Questionnaire.Questionnaire</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>05269bbb8b6984e448d3a6540d202170</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Spawning/PrefabsMenu.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0899428-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Single.Spawning.PrefabsMenu</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b3e87efa1e56aab4f9ae63c8d0920547</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Spawning/SpawnPrefabControl.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0909431-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Single.Spawning.SpawnPrefabControl</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0ef28c9b1cbd47c49a837fe986ba4094</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Avatar/AvatarAudioStatusIndicator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.8759084-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.AvatarAudioStatusIndicator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>009abbe108aa0e44d969b9b36e113408</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Avatar/AvatarNameIndicator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.8769085-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.AvatarNameIndicator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>510a67485d47f9b49a17f622b9063e5f</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Avatar/FloatingAvatar.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.8889118-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.FloatingAvatar</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4679a1ef56e37f04a9b05702f349866b</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Avatar/FloatingHandsAnimator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.8889118-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.FloatingHandsAnimator</string>
+      <string>Ubiq.Samples.FloatingHandsAnimator+Side</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>22b5e06a2aec95844b28a259f46c40f4</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Avatar/TexturedAvatar.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.8939129-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.TexturedAvatar</string>
+      <string>Ubiq.Samples.TexturedAvatar+TextureEvent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>391892d9870c0ea4a85ca1b593e6cfbb</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Firework/Firework.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.8989142-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Firework</string>
+      <string>Ubiq.Samples.Firework+Message</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>253d2c20858f4ac4eb3a607033123d7e</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Interaction/FollowGraspable.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.904915-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.FollowGraspable</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>69fe2aa0b2d0f1a4dbc9ee7f428c28ce</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/NameManager/NameManager.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.9069158-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.NameManager</string>
+      <string>Ubiq.Samples.Social.NameManager+WrappedList</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>735faaff3bc0ce44d98b76bb12437b62</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/RoomSceneManager/RoomSceneManager.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.9136041-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.RoomSceneManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7d0d9529fe728274cada2b2d0afd319a</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Scenes/SceneInfo.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.990062-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.SceneInfo</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3bd7ba1dccff84229b37ae2455db67a1</guid>
+    <fileName>Assets/EnvironmentAssets - 11_20/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Scripts/Editor/CTI_AdvancedEdgeFluttering.cs</fileName>
+    <timeStamp>2023-02-26T07:19:18-05:00</timeStamp>
+    <typeFullName>
+      <string>CTI_AdvancedEdgeFluttering</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7bb9e0160882341dfa7539c64f31f315</guid>
+    <fileName>Assets/EnvironmentAssets - 11_20/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Scripts/Editor/CTI_DetailsEnum.cs</fileName>
+    <timeStamp>2023-02-26T07:19:28-05:00</timeStamp>
+    <typeFullName>
+      <string>CTI_DetailsEnum</string>
+      <string>CTI_DetailsEnum+detailMode</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>71369e1df01d140e5888122d9de3bd6c</guid>
+    <fileName>Assets/EnvironmentAssets - 11_20/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Scripts/Editor/CTI_ShaderGUI.cs</fileName>
+    <timeStamp>2023-02-26T07:19:26-05:00</timeStamp>
+    <typeFullName>
+      <string>CTI_ShaderGUI</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>699a259a1346f3b46a6cc19ab2fe4340</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Logging/Editor/LoggingDiagnosticsEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0689375-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.UnitTests.Logging.LoggingDiagnosticsEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>058a34655fd8dd949b1dc4589b5a9427</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Properties/Editor/PeerPropertyEditorEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0769399-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Single.Properties.PeerPropertyEditorEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d44c0e282e421c6439c888fbd5f5c6be</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Rooms/Scripts/RoomClientJoinHelper.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0849418-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Minimal.Rooms.RoomClientJoinHelper</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1e8ba071be5b15940b8233bba4d34554</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Avatar/Editor/TexturedAvatarEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.8879116-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.TexturedAvatarEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>548f5a0b57b5ed64b8015809688ebfae</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Avatar/SpeechIndicator/SpeechIndicator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.8929126-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.SpeechIndicator</string>
+      <string>Ubiq.Samples.SpeechIndicator+Mode</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e8def67230a7d334f8d311ec1ab45f32</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/RoomSceneManager/Editor/RoomSceneManagerEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.9126039-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.RoomSceneManagerEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8a1a9b0bb86f77445a267bd1f49bd7e5</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Scenes/Editor/SceneInfoEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.9156045-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.SceneInfoEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4633b5cd979af69439a44cc91adf2d1d</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Scenes/OutdoorScene/AudioBox.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.9556135-05:00</timeStamp>
+    <typeFullName>
+      <string>AudioBox</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>65bef7ee9c2e709449d2e7e439595f7c</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/Scenes/OutdoorScene/FireworksBox.cs</fileName>
+    <timeStamp>2023-12-05T22:39:49.9566139-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.IFirework</string>
+      <string>Ubiq.Samples.FireworksBox</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>cc33e78e74837a2449ddd015817f3cda</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/AvatarPagePanelControl.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0191591-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.AvatarPagePanelControl</string>
+      <string>Ubiq.Samples.Social.AvatarPagePanelControl+BindEvent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>034acb3a584fd3b4895cf93d33bc3f28</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/AvatarPagePanelController.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0201593-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.AvatarPagePanelController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9cb6f4c0473915c4abf145551237643d</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/BrowseMenuControl.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0201593-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.BrowseMenuControl</string>
+      <string>Ubiq.Samples.BrowseMenuControl+BindEvent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e46ce7c6975343347a4f57aae85d2289</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/BrowseMenuControlJoinButton.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0211597-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.BrowseMenuControlJoinButton</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>279fc3506ef49314aa860cdd22c2b924</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/BrowsePanelController.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0221599-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.BrowsePanelController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>54846d0b986094045abe9a560612076f</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/CurrentRoomPanel.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0221599-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.CurrentRoomPanel</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>37abae3cf4cfefd4e96024b690a60c72</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/CurrentRoomPanelControl.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0231601-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.CurrentRoomPanelControl</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>cf195314cd82d5a4cb07781bd1d66a61</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/DotPageIndicator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0241604-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.DotPageIndicator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>86b2ec50fc9e0b34c8e5ebf40e5d8bd7</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/JoinRoomButton.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0251604-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.JoinRoomButton</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8c068a49b7630df4bb72cbdafec29c76</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/Key.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0251604-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Key</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9ff794451437a7246a04ae8a104a9607</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/Keyboard.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0261608-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Keyboard</string>
+      <string>Ubiq.Samples.Keyboard+KeyCase</string>
+      <string>Ubiq.Samples.Keyboard+InputEvent</string>
+      <string>Ubiq.Samples.Keyboard+KeyCaseEvent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b5ca84b7d66368042b6fe9817651a6c6</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/LeaveRoomButton.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0271609-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.LeaveRoomButton</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a435ecbd92c9c374292395311e247add</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/Mirror.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0271609-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.Mirror</string>
+      <string>Ubiq.Samples.Social.Mirror+RenderMode</string>
+      <string>Ubiq.Samples.Social.Mirror+Config</string>
+      <string>Ubiq.Samples.Social.Mirror+PlatformConfig</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8da2e42982c8cb24393697186f9ffd1d</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/NameTextEntry.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0281612-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.NameTextEntry</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0a704bb64a9573948acb810d7ad8e613</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/NetworkedMainMenuIndicator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0291617-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.NetworkedMainMenuIndicator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5fe5cdcd07b6dd043a683a4686fa9e93</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/NewRoomButton.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0291617-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.NewRoomButton</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>290a3493153bd924da2e22aeba0bfc76</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/PageIndicator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0301619-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.PageIndicator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9ca5dabe3b5adf54cba27ca257698c05</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/PagePanel.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0311619-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.PagePanel</string>
+      <string>Ubiq.Samples.Social.PagePanel+PageChangedEvent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>22a968094e407b641afcad253af06fd1</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/PanelSwitcher.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0311619-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.PanelSwitcher</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e24d5ac4ac2b16244abdf7936d7fd215</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/PeersPanelControl.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0321619-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.PeersPanelControl</string>
+      <string>Ubiq.Samples.PeersPanelControl+StagedIconFloat</string>
+      <string>Ubiq.Samples.PeersPanelControl+StagedIconInt</string>
+      <string>Ubiq.Samples.PeersPanelControl+BindEvent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2feeb4b6c0082be429e3eff2ab0c1983</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/PeersPanelController.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0331623-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.PeersPanelController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>13967fc7abf8e9e4d8286e2810cf462d</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/SetNameButton.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0341626-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.SetNameButton</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>29c8d89b7edbf66468bd5d990ffe2b86</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/SocialMenu.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0341626-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.ISocialMenuBindable</string>
+      <string>Ubiq.Samples.SocialMenu</string>
+      <string>Ubiq.Samples.SocialMenu+State</string>
+      <string>Ubiq.Samples.SocialMenu+SocialMenuEvent</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1c6b1b8d164b89c44bc262fd7f6b76c8</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/SocialMenuIndicatorSpawner.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0351627-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.SocialMenuIndicatorSpawner</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9a43f37dede1ac74c8f3431e9f649cc7</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/SocialMenuRequestHandler.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0361629-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.SocialMenuRequestHandler</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>34442e33da4e9c8428e9e63fa6dcf0b7</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/TextEntry.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.037163-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.TextEntry</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2f7f43ec3b4188541b1b503d8f28a94e</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/TextEntryKeyboardListener.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.037163-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.TextEntryKeyboardListener</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9d7799790e78ba74cab66629d4766fcc</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/TextPageIndicator.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0381636-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.TextPageIndicator</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>528d6b835dda40a45a7b6fcb38e50529</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/UserPanelController.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0391637-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Social.UserPanelController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>933353cb0521dfc499c590a7245859f9</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/_Common/UI/Scripts/WristMenuInvoker.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0401638-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.WristMenuInvoker</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>78e9898c0e19e2d498645a88e374e51e</guid>
+    <fileName>Assets/Samples/Ubiq/0.4.5/Samples/MinimalExamples/Rooms/Scripts/Editor/RoomClientJoinHelperEditor.cs</fileName>
+    <timeStamp>2023-12-05T22:39:50.0839408-05:00</timeStamp>
+    <typeFullName>
+      <string>Ubiq.Samples.Minimal.Rooms.RoomClientJoinHelperEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+</ArrayOfTypeDate>

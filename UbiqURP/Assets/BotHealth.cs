@@ -38,6 +38,6 @@ public class BotHealth : MonoBehaviour
     private void Die()
     {
         ragdoll.ActivateRagdoll();
-        botControl.dead = true;
+        botControl.Kill();
     }
 }

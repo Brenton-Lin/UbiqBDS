@@ -16,6 +16,22 @@ public class ContourMap : MonoBehaviour
     // define all parameters
     public static Texture2D FromTerrain(Terrain terrain, int numberOfBands, Color bandColor, Color bkgColor)
     {
+        //color gradient setup
+        Gradient gradient = new Gradient();
+        GradientColorKey[] colors = new GradientColorKey[2];
+        //time is the value to color key, just need to normalize the band number to a value between 0 and 1.
+        GradientAlphaKey[] alphas = new GradientAlphaKey[2];
+
+        //set low color and high color.
+        colors[0] = new GradientColorKey(Color.green, 0.0f);
+        colors[1] = new GradientColorKey(Color.red, 1.0f);
+
+        //no need for alpha changes yet
+        alphas[0] = new GradientAlphaKey(1.0f, 0.0f);
+        alphas[1] = new GradientAlphaKey(1.0f, 1.0f);
+
+        gradient.SetKeys(colors, alphas);
+
         // dimensions
         int width = terrain.terrainData.heightmapResolution;
         int height = terrain.terrainData.heightmapResolution;
@@ -61,6 +77,9 @@ public class ContourMap : MonoBehaviour
 
         // Create height band list
         float bandDistance = (maxHeight - minHeight) / (float)numberOfBands; // Number of height bands to create
+
+        //normalize number of bands to color scale.
+        float colorScale = 1.0f / (float) numberOfBands;
 
         List<float> bands = new List<float>();
 
@@ -112,7 +131,8 @@ public class ContourMap : MonoBehaviour
                             // magic equation to find correct array index
                             int ind = ((height - y - 1) * width) + (width - x - 1);
 
-                            colourArray[ind] = bandColor;
+                            //set color to scale in gradient
+                            colourArray[ind] = gradient.Evaluate(b*colorScale);
                         }
                     }
                 }

@@ -36,7 +36,8 @@ public class ContourLines : MonoBehaviour
         else
         {
             byte[] png = topoMap.EncodeToPNG();
-            File.WriteAllBytes(outputPath, png);
+            //Weird Unity compile error when buildig, uncomment when using at runtime.
+            //File.WriteAllBytes(outputPath, png);
         }
     }
 }
