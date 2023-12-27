@@ -16,8 +16,6 @@ public class ReloadingRifle : SimpleGun
 
     public UnityEvent LockInMag = new UnityEvent();
 
-    public bool DebugShoot = false;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -26,13 +24,11 @@ public class ReloadingRifle : SimpleGun
     // Update is called once per frame
     void Update()
     {
-        if (DebugShoot)
-        {
-            ShootBotLogic();
-        }    
+
         // magazine interactible follows gun interactible without nesting it
         if (magInGun)
         {
+            Debug.Log("Mag in gun");
             magazine.transform.position = rifle.transform.position;
             magazine.transform.rotation = rifle.transform.rotation * Quaternion.Euler(0, 90, 0);
         }

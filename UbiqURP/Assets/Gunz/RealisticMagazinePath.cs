@@ -25,17 +25,17 @@ public class RealisticMagazinePath : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        // Debug.Log("Collided");
+        Debug.Log("Collided");
         if (other.name == "MagazineTriggerForGunInterfacing") // maybe will give magazine its own component
         {
-            // Debug.Log("CollidedAsMagazine");
+            Debug.Log("CollidedAsMagazine");
             magazineInserted = true;
         }
     }
 
     public void OnTriggerExit(Collider other)
     {
-        // Debug.Log("UnCollided");
+        Debug.Log("UnCollided");
         if (other.name == "MagazineTriggerForGunInterfacing")
         {
             magazineInserted = false;

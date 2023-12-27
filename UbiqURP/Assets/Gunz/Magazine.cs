@@ -21,7 +21,7 @@ public class Magazine : MonoBehaviour
         if (other.GetComponent<MagazineLockTrigger>()) 
         {
             Debug.Log("Collided with the MagWellLock");
-            other.GetComponent<MagazineLockTrigger>().gun.GetComponent<RifleAndSnapReload>().AddMagToGun();
+            other.GetComponent<MagazineLockTrigger>().gun.GetComponent<NetworkedRifle>().gun.AddMagToGun();
             LockMag.Invoke();
         }
     }
@@ -31,7 +31,7 @@ public class Magazine : MonoBehaviour
         Debug.Log("UnCollided");
         if (other.GetComponent<MagazineLockTrigger>())
         {
-            other.GetComponent<MagazineLockTrigger>().gun.GetComponent<RifleAndSnapReload>().RemoveMagFromGun();
+            other.GetComponent<MagazineLockTrigger>().gun.GetComponent<NetworkedRifle>().gun.RemoveMagFromGun();
         }
     }
 }

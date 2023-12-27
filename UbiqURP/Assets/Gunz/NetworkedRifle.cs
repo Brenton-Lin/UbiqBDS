@@ -1,24 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using Ubiq.Messaging;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
+using static UnityEngine.UI.GridLayoutGroup;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
 
-public class NetworkedFlashlight : NetworkedObject
+public class NetworkedRifle : NetworkedObject
 {
-    [SerializeField]
-    private Flashlight flashlight;
-    // Start is called before the first frame update
-    public void DoUse()
-    {
-        // bool toggles on press and release
-        flashlight.ClickClick();
-        flashlight.ClickClick();
-    }
 
     public NetworkContext context;
     public bool owner;
     public bool use;
     private Rigidbody rb;
+    [SerializeField]
+    public RifleAndSnapReload gun;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +24,9 @@ public class NetworkedFlashlight : NetworkedObject
 
     Vector3 lastPosition;
 
+    // Update is called once per frame
     void Update()
     {
-        /*        Debug.Log("Last position: " + lastPosition);
-                Debug.Log("CurrentPosition: " + transform.position);*/
 
         if (lastPosition != transform.localPosition)
         {
@@ -45,7 +40,7 @@ public class NetworkedFlashlight : NetworkedObject
                     rotation = transform.localRotation,
                     clearOwners = false,
                     isKinematic = true,
-                    use = flashlight.lit
+                    use = use
                 });
             }
             else
@@ -60,6 +55,8 @@ public class NetworkedFlashlight : NetworkedObject
 
         }
 
+        use = false;
+        
     }
 
     private struct Message
@@ -69,6 +66,17 @@ public class NetworkedFlashlight : NetworkedObject
         public bool clearOwners;
         public bool isKinematic;
         public bool use;
+    }
+
+    public void DoUse() 
+    {
+        Debug.Log("Trigger pulled");     
+        if (gun.magInGun)
+        {
+            Debug.Log("Shot");
+            gun.Shoot();
+            use = true;
+        }
     }
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
@@ -88,15 +96,14 @@ public class NetworkedFlashlight : NetworkedObject
         }
 
         use = m.use;
-        if(use)
+        Debug.Log("Got message. Use value: " + m.use);
+        if (m.use) 
         { 
-            flashlight.LightUp(); 
-        }
-        else
-        {
-            flashlight.LightOff();
+            DoUse();
+            Debug.Log("Shot over network");
         }
     }
+
 
 
 }

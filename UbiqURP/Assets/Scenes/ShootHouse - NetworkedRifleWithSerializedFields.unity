@@ -520,7 +520,6 @@ MonoBehaviour:
   owner: 0
   use: 0
   testParticles: {fileID: 0}
-  lastPosition: {x: 0, y: 0, z: 0}
   grenade: {fileID: 10074280}
 --- !u!114 &10074280
 MonoBehaviour:
@@ -1586,7 +1585,6 @@ MonoBehaviour:
   owner: 0
   use: 0
   testParticles: {fileID: 0}
-  lastPosition: {x: 0, y: 0, z: 0}
   grenade: {fileID: 49544982}
 --- !u!114 &49544982
 MonoBehaviour:
@@ -19225,7 +19223,6 @@ MonoBehaviour:
   owner: 0
   use: 0
   testParticles: {fileID: 0}
-  lastPosition: {x: 0, y: 0, z: 0}
   gun: {fileID: 973478819}
 --- !u!114 &973478819
 MonoBehaviour:
@@ -27750,7 +27747,6 @@ MonoBehaviour:
   owner: 0
   use: 0
   testParticles: {fileID: 0}
-  lastPosition: {x: 0, y: 0, z: 0}
   grenade: {fileID: 1358600169}
 --- !u!114 &1358600169
 MonoBehaviour:
@@ -30285,7 +30281,6 @@ MonoBehaviour:
   owner: 0
   use: 0
   testParticles: {fileID: 0}
-  lastPosition: {x: 0, y: 0, z: 0}
   gun: {fileID: 1541206199}
 --- !u!1 &1544112353
 GameObject:
