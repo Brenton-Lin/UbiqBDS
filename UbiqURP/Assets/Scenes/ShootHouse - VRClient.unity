@@ -8108,7 +8108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717903028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.31, y: -0.92, z: 12.52}
+  m_LocalPosition: {x: -8.21, y: -0.92, z: 10.3}
   m_LocalScale: {x: 0.41800958, y: 0.41800958, z: 0.41800958}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9755,6 +9755,28 @@ MonoBehaviour:
   rightWristRotationNode: RightWristRotation
   leftGripNode: LeftGrip
   rightGripNode: RightGrip
+--- !u!114 &917669798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917669791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664ecad397b6efb40be6b7cc46141f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatarCatalogue: {fileID: 11400000, guid: 4b37ef17d00e6504aa8d20da64793d0d, type: 2}
+  isVR: 1
+  vrAvatarPrefab: {fileID: 3172939939781028348, guid: 3d0dd6d3a52613144917c4dd0bf2618a,
+    type: 3}
+  desktopAvatarPrefab: {fileID: 3172939939781028348, guid: fa9872ac217510044a010fe52d3f3f74,
+    type: 3}
+  selectedPrefab: {fileID: 0}
+  hints:
+    serializedProviders:
+      instructions: []
 --- !u!1 &921635185
 GameObject:
   m_ObjectHideFlags: 0
@@ -13485,7 +13507,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1250443811
 Transform:
   m_ObjectHideFlags: 0
@@ -28443,7 +28465,7 @@ PrefabInstance:
     - target: {fileID: 1731467569171809127, guid: 46c1f5d5a11cf5042886aabd56e7b9d7,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1731467569171809127, guid: 46c1f5d5a11cf5042886aabd56e7b9d7,
         type: 3}
@@ -28785,6 +28807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 198017076, guid: 46c1f5d5a11cf5042886aabd56e7b9d7, type: 3}
+    - {fileID: 1731467569171809127, guid: 46c1f5d5a11cf5042886aabd56e7b9d7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 46c1f5d5a11cf5042886aabd56e7b9d7, type: 3}
 --- !u!1 &2673950587689233534
 GameObject:

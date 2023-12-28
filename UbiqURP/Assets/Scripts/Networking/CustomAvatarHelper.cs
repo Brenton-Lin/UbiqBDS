@@ -7,7 +7,7 @@ using Tilia.CameraRigs.TrackedAlias;
 
 namespace Ubiq.Avatars
 {
-    [RequireComponent(typeof(AvatarManager))]
+    [RequireComponent(typeof(CustomAvatarManager))]
     public class CustomAvatarHelper : MonoBehaviour
     {
         [SerializeField] private string headPositionNode = "HeadPosition";
@@ -32,7 +32,7 @@ namespace Ubiq.Avatars
             {
                 Debug.LogWarning("No VRTK player controller found, assuming desktop client!");
                 //let Avatar manager know to use the desktop avatar prefab.
-                GetComponent<AvatarManager>().SetVRFlag(false);
+                GetComponent<CustomAvatarManager>().SetVRFlag(false);
                 
                 //no VRTK controller found, so we should have disabled VRTK and enabled a desktop client
                 //now setup the transform providers so that all nodes are just the main camera.
@@ -125,7 +125,7 @@ namespace Ubiq.Avatars
             }
 
             var hp = gameObject.AddComponent<TransformAvatarHintProvider>();
-            var manager = GetComponent<AvatarManager>();
+            var manager = GetComponent<CustomAvatarManager>();
             hp.hintTransform = transform;
             if (posNode != string.Empty)
             {
@@ -151,7 +151,7 @@ namespace Ubiq.Avatars
             }
 
             var hp = gameObject.AddComponent<VRTKGripAvatarHintsProvider>();
-            var manager = GetComponent<AvatarManager>();
+            var manager = GetComponent<CustomAvatarManager>();
             hp.controller = handController;
             manager.hints.SetProvider(node, AvatarHints.Type.Float, hp);
         }

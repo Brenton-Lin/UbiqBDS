@@ -11,14 +11,17 @@ using UnityEngine.Events;
 namespace Ubiq.Avatars
 {
     /// <summary>
-    /// The CustomAvatarManager creates and maintains Avatars for the local player and remote peers.
-    /// CustomAvatarManager operates using the RoomClient to create Avatar instances for all remote peers, though
-    /// Avatars may be created outside of CustomAvatarManager and maintained another way.
+    /// The AvatarManager creates and maintains Avatars for the local player and remote peers.
+    /// AvatarManager operates using the RoomClient to create Avatar instances for all remote peers, though
+    /// Avatars may be created outside of AvatarManager and maintained another way.
     /// </summary>
     public class CustomAvatarManager : MonoBehaviour
     {
         public PrefabCatalogue avatarCatalogue;
-        public GameObject avatarPrefab;
+        public bool isVR = true;
+        public GameObject vrAvatarPrefab;
+        public GameObject desktopAvatarPrefab;
+        public GameObject selectedPrefab;
         public AvatarHints hints;
 
         /// <summary>
@@ -78,7 +81,7 @@ namespace Ubiq.Avatars
 
             RoomClient.OnPeerUpdated.AddListener(OnPeerUpdated);
 
-            UpdateLocalAvatar();
+            //UpdateLocalAvatar();
         }
 
         private void Update()
@@ -106,9 +109,8 @@ namespace Ubiq.Avatars
             //preceding step where onspawned is called.
             if (peer == RoomClient.Me)
             {
-                //What if we just don't create a local avatar? Will peers still be represented?
                 // Local setup
-                /*if (LocalAvatar != null)
+                if (LocalAvatar != null)
                 {
                     // If we are changing the Avatar the LocalAvatar will not be destroyed until next frame so we can still get its transform.
                     gameObject.transform.localPosition = LocalAvatar.transform.localPosition;
@@ -116,22 +118,22 @@ namespace Ubiq.Avatars
                 }
                 avatar.IsLocal = true;
                 avatar.SetHints(hints);
-                gameObject.name = $"My Avatar #{ peer.uuid }";
+                gameObject.name = $"My Avatar #{peer.uuid}";
 
-                LocalAvatar = avatar;*/
-                playerAvatars.Remove(peer);
+                LocalAvatar = avatar;
+                //playerAvatars.Remove(peer);
 
             }
             else
             {
                 // Remote setup
                 avatar.gameObject.name = $"Remote Avatar #{peer.uuid}";
-                gameObject.transform.parent = transform;
-                OnAvatarCreated.Invoke(avatar);
+                //gameObject.transform.parent = transform;
+                //OnAvatarCreated.Invoke(avatar);
             }
-
-            //gameObject.transform.parent = transform;
-            // OnAvatarCreated.Invoke(avatar);
+            //I changed this???
+            gameObject.transform.parent = transform;
+            OnAvatarCreated.Invoke(avatar);
         }
 
         private void OnDespawned(GameObject gameObject, IRoom room,
@@ -145,7 +147,7 @@ namespace Ubiq.Avatars
         private void UpdateLocalAvatar()
         {
             // If we have an existing instance, but it is the wrong prefab, destroy it so we can start again
-            if (spawnedPrefab && spawnedPrefab != avatarPrefab)
+            if (spawnedPrefab && spawnedPrefab != selectedPrefab)
             {
                 // Spawned with peer scope so callback is immediate
                 spawner.Despawn(spawned);
@@ -154,19 +156,32 @@ namespace Ubiq.Avatars
                 spawnedPrefab = null;
             }
 
+            if (!spawnedPrefab)
+            {
+                //here we can set our logic to spawn a desktop or VR avatar.
+                if (isVR)
+                {
+                    selectedPrefab = vrAvatarPrefab;
+
+                }
+                else
+                {
+                    selectedPrefab = desktopAvatarPrefab;
+                }
+
+                // Spawned with peer scope so callback is immediate
+                spawned = spawner.SpawnWithPeerScope(selectedPrefab);
+                spawnedPrefab = selectedPrefab;
+            }
+
             // Avatars require a prefab. If missing, it means the remote player does not want an avatar.
-            if (!avatarPrefab)
+            if (!selectedPrefab)
             {
                 return;
             }
 
             // Create an instance of the correct prefab for this avatar
-            if (!spawnedPrefab)
-            {
-                // Spawned with peer scope so callback is immediate
-                spawned = spawner.SpawnWithPeerScope(avatarPrefab);
-                spawnedPrefab = avatarPrefab;
-            }
+
         }
 
         private void OnPeerUpdated(IPeer peer)
@@ -178,18 +193,22 @@ namespace Ubiq.Avatars
         }
 
         /// <summary>
-        /// Find the CustomAvatarManager for forest the Component is a member of. May return null if there is no CustomAvatarManager for the scene.
+        /// Find the AvatarManager for forest the Component is a member of. May return null if there is no AvatarManager for the scene.
         /// </summary>
-        public static CustomAvatarManager Find(MonoBehaviour Component)
+        public static AvatarManager Find(MonoBehaviour Component)
         {
             var scene = NetworkScene.Find(Component);
             if (scene)
             {
-                return scene.GetComponentInChildren<CustomAvatarManager>();
+                return scene.GetComponentInChildren<AvatarManager>();
             }
             return null;
         }
-
+        //toggle VR flag for AvatarManager
+        public void SetVRFlag(bool isVR)
+        {
+            this.isVR = isVR;
+        }
         /// <summary>
         /// Finds the first avatar (if any) associated with the Peer
         /// </summary>
