@@ -1,8 +1,11 @@
 {
   "dependencies": {
+    "com.nickmaltbie.openkcc": "git+https://github.com/nicholas-maltbie/OpenKCC.git#release/latest",
+    "com.nickmaltbie.screenmanager": "https://github.com/nicholas-maltbie/ScreenManager.git?path=/Packages/com.nickmaltbie.screenmanager/",
+    "com.nickmaltbie.statemachineunity": "https://github.com/nicholas-maltbie/StateMachineUnity.git#release/latest",
+    "com.nickmaltbie.testutilsunity": "https://github.com/nicholas-maltbie/TestUtilsUnity.git#release/latest",
     "com.ucl.ubiq": "https://github.com/UCL-VR/ubiq.git#upm",
     "com.unity.animation.rigging": "1.1.1",
-    "com.unity.collab-proxy": "2.0.7",
     "com.unity.editorcoroutines": "1.0.0",
     "com.unity.ide.rider": "3.0.24",
     "com.unity.ide.visualstudio": "2.0.17",

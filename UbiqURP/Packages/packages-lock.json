@@ -1,5 +1,49 @@
 {
   "dependencies": {
+    "com.nickmaltbie.openkcc": {
+      "version": "git+https://github.com/nicholas-maltbie/OpenKCC.git#release/latest",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.nickmaltbie.screenmanager": "3.2.0",
+        "com.nickmaltbie.statemachineunity": "1.4.0",
+        "com.nickmaltbie.testutilsunity": "1.1.0",
+        "com.unity.editorcoroutines": "1.0.0",
+        "com.unity.inputsystem": "1.5.0",
+        "com.unity.textmeshpro": "1.0.0"
+      },
+      "hash": "b7dfd21dbb7da98fa4d7df359a5f98fb9a055de0"
+    },
+    "com.nickmaltbie.screenmanager": {
+      "version": "https://github.com/nicholas-maltbie/ScreenManager.git?path=/Packages/com.nickmaltbie.screenmanager/",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.inputsystem": "1.0.2",
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.textmeshpro": "1.0.0"
+      },
+      "hash": "2aef2af00b94bdf2b5bdae471536b419ae22241f"
+    },
+    "com.nickmaltbie.statemachineunity": {
+      "version": "https://github.com/nicholas-maltbie/StateMachineUnity.git#release/latest",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.nickmaltbie.testutilsunity": "1.1.0",
+        "com.unity.inputsystem": "1.0.0"
+      },
+      "hash": "fc3e9680994961154567116d5065280deb310b07"
+    },
+    "com.nickmaltbie.testutilsunity": {
+      "version": "https://github.com/nicholas-maltbie/TestUtilsUnity.git#release/latest",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.inputsystem": "1.0.0"
+      },
+      "hash": "a6d6e4d3e748bb176a79dffaa7d157cbc943be30"
+    },
     "com.ucl.ubiq": {
       "version": "https://github.com/UCL-VR/ubiq.git#upm",
       "depth": 0,
@@ -26,13 +70,6 @@
       "dependencies": {
         "com.unity.mathematics": "1.2.1"
       },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.collab-proxy": {
-      "version": "2.0.7",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.editorcoroutines": {

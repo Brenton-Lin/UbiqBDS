@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Ubiq.Voip;
+using UnityEngine;
 
 namespace VRArmIK
 {
@@ -7,5 +8,10 @@ namespace VRArmIK
 	{
 		public Transform leftController, rightController, hmd;
 		public Transform leftHand, rightHand, head;
-	}
+		//public CharacterController testCharController;
+		
+        
+    }
+
+	
 }
