@@ -1,4 +1,4 @@
-repository "UbiqURP@BDS_Team@cloud"
+repository "BDS_Team@BDS_Development@cloud"
   path "/"
-    br "/main"
-    co "/main"
+    smartbranch "/main/Task_Additional_LowerBodyIK_Features" 
+     

@@ -129,11 +129,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean JoystickClick
+        public virtual SteamVR_Action_Boolean LeftJoystickClick
         {
             get
             {
-                return SteamVR_Actions.default_JoystickClick;
+                return SteamVR_Actions.default_LeftJoystickClick;
             }
         }
         

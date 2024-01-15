@@ -45,7 +45,7 @@ namespace Valve.VR
         
         private static SteamVR_Action_Boolean p_default_Jump;
         
-        private static SteamVR_Action_Boolean p_default_JoystickClick;
+        private static SteamVR_Action_Boolean p_default_LeftJoystickClick;
         
         private static SteamVR_Action_Boolean p_default_XButton;
         
@@ -265,11 +265,11 @@ namespace Valve.VR
             }
         }
         
-        public static SteamVR_Action_Boolean default_JoystickClick
+        public static SteamVR_Action_Boolean default_LeftJoystickClick
         {
             get
             {
-                return SteamVR_Actions.p_default_JoystickClick.GetCopy<SteamVR_Action_Boolean>();
+                return SteamVR_Actions.p_default_LeftJoystickClick.GetCopy<SteamVR_Action_Boolean>();
             }
         }
         
@@ -714,7 +714,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_MovementAxis,
                     SteamVR_Actions.default_ViewAxis,
                     SteamVR_Actions.default_Jump,
-                    SteamVR_Actions.default_JoystickClick,
+                    SteamVR_Actions.default_LeftJoystickClick,
                     SteamVR_Actions.default_XButton,
                     SteamVR_Actions.default_Haptic,
                     SteamVR_Actions.platformer_Move,
@@ -783,7 +783,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_MovementAxis,
                     SteamVR_Actions.default_ViewAxis,
                     SteamVR_Actions.default_Jump,
-                    SteamVR_Actions.default_JoystickClick,
+                    SteamVR_Actions.default_LeftJoystickClick,
                     SteamVR_Actions.default_XButton,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
@@ -853,7 +853,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_SnapTurnLeft,
                     SteamVR_Actions.default_SnapTurnRight,
                     SteamVR_Actions.default_Jump,
-                    SteamVR_Actions.default_JoystickClick,
+                    SteamVR_Actions.default_LeftJoystickClick,
                     SteamVR_Actions.default_XButton,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Brake,
@@ -925,7 +925,7 @@ namespace Valve.VR
                     SteamVR_Actions.default_MovementAxis,
                     SteamVR_Actions.default_ViewAxis,
                     SteamVR_Actions.default_Jump,
-                    SteamVR_Actions.default_JoystickClick,
+                    SteamVR_Actions.default_LeftJoystickClick,
                     SteamVR_Actions.default_XButton,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
@@ -992,7 +992,7 @@ namespace Valve.VR
             SteamVR_Actions.p_default_MovementAxis = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/default/in/MovementAxis")));
             SteamVR_Actions.p_default_ViewAxis = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/default/in/ViewAxis")));
             SteamVR_Actions.p_default_Jump = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/Jump")));
-            SteamVR_Actions.p_default_JoystickClick = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/JoystickClick")));
+            SteamVR_Actions.p_default_LeftJoystickClick = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/LeftJoystickClick")));
             SteamVR_Actions.p_default_XButton = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/XButton")));
             SteamVR_Actions.p_default_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Action.Create<SteamVR_Action_Vibration>("/actions/default/out/Haptic")));
             SteamVR_Actions.p_platformer_Move = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/platformer/in/Move")));

@@ -26,7 +26,7 @@ namespace Ubiq.Avatars
         private void Start()
         {
             //Finds the VRTK player controller rather than the Ubiq
-            var pcs = FindObjectsOfType<TrackedAliasFacade>(includeInactive: false);
+            var pcs = FindObjectsOfType<LinkedAliasAssociationCollection>(includeInactive: false);
 
             if (pcs.Length == 0)
             {
@@ -45,7 +45,7 @@ namespace Ubiq.Avatars
             }
             else if (pcs.Length > 1)
             {
-                Debug.LogWarning("Multiple VRTK player controllers found. Using: " + pcs[0].name);
+                Debug.LogWarning("Multiple VRTK player rigs found. Using: " + pcs[0].name);
             }
             else //Just one player controller found
             {
@@ -53,7 +53,7 @@ namespace Ubiq.Avatars
                 //Sets the transform to track for the head, the transform of the first camera object in ubiq players found in scene.
                 //Now we're just searching for a Unity Camera so the code should work from here.
                 SetTransformProvider(headPositionNode, headRotationNode,
-                    pc.transform.Find("Aliases/HeadsetAlias"));
+                    pc.transform.Find("[CameraRig]/Camera"));
 
                 var hcs = pc.GetComponentsInChildren<VRTKHandController>();
 

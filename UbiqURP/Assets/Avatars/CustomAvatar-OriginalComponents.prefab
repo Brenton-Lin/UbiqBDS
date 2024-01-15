@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269e60485d684c446b0efc69970416ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpdateRate: 60
+  UpdateRate: 120
 --- !u!114 &2075108969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,6 +320,7 @@ MonoBehaviour:
   torso: {fileID: 2997466259208464852}
   leftHand: {fileID: 8027680674902865557}
   rightHand: {fileID: 6815075459618467101}
+  avatar: {fileID: 0}
   headRenderer: {fileID: 8557492846676609213}
   torsoRenderer: {fileID: 4166409591234040507}
   leftHandRenderer: {fileID: 2129738114390050521}

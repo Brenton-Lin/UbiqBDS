@@ -536,6 +536,11 @@ PrefabInstance:
       propertyPath: m_Data.m_MaintainOffset
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6046339169678596388, guid: 6eef3a5d83438a3469d1e2646152c70f,
+        type: 3}
+      propertyPath: m_Name
+      value: SwatLegsNewIK
+      objectReference: {fileID: 0}
     - target: {fileID: 6497732571162899452, guid: 6eef3a5d83438a3469d1e2646152c70f,
         type: 3}
       propertyPath: m_Enabled
@@ -658,6 +663,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomAvatar
       objectReference: {fileID: 0}
+    - target: {fileID: 8806942327672543854, guid: 6eef3a5d83438a3469d1e2646152c70f,
+        type: 3}
+      propertyPath: m_Name
+      value: leg_mesh
+      objectReference: {fileID: 0}
     - target: {fileID: 8995531436596758046, guid: 6eef3a5d83438a3469d1e2646152c70f,
         type: 3}
       propertyPath: shoulder
@@ -721,6 +731,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowerBodyAnimator: {fileID: 387057969191137875}
   speed: 0
+  updateInterval: 0.15
+  worldVelocity: {x: 0, y: 0, z: 0}
+--- !u!137 &2334910049727518656 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3133179833858931831, guid: 6eef3a5d83438a3469d1e2646152c70f,
+    type: 3}
+  m_PrefabInstance: {fileID: 800530384347179959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2918350322876415551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2565958927600211336, guid: 6eef3a5d83438a3469d1e2646152c70f,
@@ -748,12 +766,6 @@ Transform:
 --- !u!137 &6237010804109224346 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6742555372929647149, guid: 6eef3a5d83438a3469d1e2646152c70f,
-    type: 3}
-  m_PrefabInstance: {fileID: 800530384347179959}
-  m_PrefabAsset: {fileID: 0}
---- !u!137 &6722225270588523192 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 6221206527860992271, guid: 6eef3a5d83438a3469d1e2646152c70f,
     type: 3}
   m_PrefabInstance: {fileID: 800530384347179959}
   m_PrefabAsset: {fileID: 0}
@@ -1016,6 +1028,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6310238835740853278, guid: b0d64f917d2447e4f85037ad6283d5bf,
+        type: 3}
+      propertyPath: m_Name
+      value: TorsoReference
+      objectReference: {fileID: 0}
     - target: {fileID: 6690563873827004068, guid: b0d64f917d2447e4f85037ad6283d5bf,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1067,7 +1084,7 @@ MonoBehaviour:
   isLocal: 0
   avatar: {fileID: 0}
   headRenderer: {fileID: 6237010804109224346}
-  legRenderer: {fileID: 6722225270588523192}
+  legRenderer: {fileID: 2334910049727518656}
   leftHandRenderer: {fileID: 0}
   rightHandRenderer: {fileID: 0}
   baseOfNeckHint: {fileID: 8448906606779964024}
