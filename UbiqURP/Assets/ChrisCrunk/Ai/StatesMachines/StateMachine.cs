@@ -70,8 +70,4 @@ public abstract class StateMachine<EState, Args> : MonoBehaviour where EState : 
 
     }
 
-    void RegisterMachine(AiStateMachineId fsm)
-    {
-
-    }
 }

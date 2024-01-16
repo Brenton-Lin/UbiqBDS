@@ -10,16 +10,16 @@ using Time = UnityEngine.Time;
 public class AiShoot : AiState
 {
 
-    // senses
+    // check eyesight every n milliseconds
     float scanInterval;
     float scanTimer;
     public int scanFrequency = 30;
+
+    // list of targets seen
     public List<AiAgent> targets;
 
     // team bool friendly is squad
 
-
-    public AiAgent bestTarget;
     public AiAgent lastBestTarget;
 
     RaycastHit hit;
@@ -27,19 +27,19 @@ public class AiShoot : AiState
     public void Enter(AiAgent agent)
     {
         agent.eyeConstraint.weight = 1.0f;
-        bestTarget = null;
-        targets = agent.senses.ScanForEnemies(agent.friendly);
+
+        targets = agent.eyes.ScanForEnemies(agent.friendly);
         scanInterval = 1.0f / scanFrequency;
     }
 
     public void Exit(AiAgent agent)
     {
-        throw new System.NotImplementedException();
+        
     }
 
     public AiStateId GetId()
     {
-        return AiStateId.Shoot;
+        return AiStateId.ShootTarget;
     }
 
     public void Update(AiAgent agent)
@@ -48,26 +48,38 @@ public class AiShoot : AiState
         scanTimer -= Time.deltaTime;
         if (scanTimer < 0)
         {
+
             scanTimer += scanInterval;
 
-            targets = agent.senses.ScanForEnemies(agent.friendly);
+            targets = agent.eyes.ScanForEnemies(agent.friendly);
+
         }
 
+        // keep, visual targetting
+        agent.bestTarget = GetBestTarget(agent.gameObject);
 
+        // agent.bestTarget = agent.heardSounds[0].gameObject.GetComponent<AiAgent>();
 
-        bestTarget = GetBestTarget(agent.gameObject);
+        /*if (agent != null && agent.mostNoticedSound != null && agent.mostNoticedSound.GetComponent<AiAgent>() != null)
+            agent.bestTarget = agent.mostNoticedSound.GetComponent<AiAgent>();*/
 
-        if (bestTarget == null) { }
-
-        if (bestTarget != null && lastBestTarget != bestTarget)
+        if (agent.bestTarget == null) 
         {
-            lastBestTarget = bestTarget;
+            
+        }
+
+        // constrain model rig to point head, and weapons towards source
+        // avoid checking repeatedly
+        // only do this function if GetBestTarget returns a different target than last check
+        if (agent.bestTarget != null && lastBestTarget != agent.bestTarget)
+        {
+            lastBestTarget = agent.bestTarget;
 
             // head constraints
             var data = agent.eyeConstraint.data.sourceObjects;
             data.Clear();
-            data.SetTransform(0, bestTarget.transform);
-            data.Add(new WeightedTransform(bestTarget.transform, 1f));
+            data.SetTransform(0, agent.bestTarget.transform);
+            data.Add(new WeightedTransform(agent.bestTarget.transform, 1f));
             agent.eyeConstraint.data.sourceObjects = data;
 
 /*            Debug.Log(agent.eyeConstraintDamp.data.sourceObject);
@@ -81,18 +93,20 @@ public class AiShoot : AiState
             // weapon aim constraint
             data = agent.weaponAimConstraint.data.sourceObjects;
             data.Clear();
-            data.SetTransform(0, bestTarget.transform);
-            data.Add(new WeightedTransform(bestTarget.transform, 0.4f));
+            data.SetTransform(0, agent.bestTarget.transform);
+            data.Add(new WeightedTransform(agent.bestTarget.transform, 0.4f));
             agent.weaponAimConstraint.data.sourceObjects = data;
 
             agent.rigs.Build();
 
         }
         
+        // check for muzzle pointing at correct place
+
         Ray ray = new Ray(agent.gunTip.transform.position, agent.gunTip.transform.forward);
         if (Physics.Raycast(ray, out hit))
         {
-            if(hit.collider != null && bestTarget != null && hit.collider.name == bestTarget.name) 
+            if (hit.collider != null && agent.bestTarget != null && hit.collider.name == agent.bestTarget.name) 
             {
                 // Debug.Log("muzzle flagged " + hit.collider.name);
                 
@@ -119,4 +133,8 @@ public class AiShoot : AiState
         return target;
     }
 
+    public void GetNetworkUpdates(AiAgent agent)
+    {
+        throw new System.NotImplementedException();
+    }
 }

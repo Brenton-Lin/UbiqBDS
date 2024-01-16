@@ -34,4 +34,9 @@ public class AiChasePlayerState : AiState
     {
 
     }
+
+    public void GetNetworkUpdates(AiAgent agent)
+    {
+        throw new System.NotImplementedException();
+    }
 }
