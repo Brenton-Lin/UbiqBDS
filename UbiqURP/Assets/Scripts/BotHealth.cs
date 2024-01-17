@@ -8,7 +8,11 @@ public class BotHealth : MonoBehaviour
     public float maxHealth;
     public float currentHealth;
     Ragdoll ragdoll;
-    LocalBotControl botControl;
+    // LocalBotControl botControl;
+
+    AiAgent agent;
+
+    public bool dealDamage;
 
     // Start is called before the first frame update
     void Start()
@@ -16,13 +20,12 @@ public class BotHealth : MonoBehaviour
         currentHealth = maxHealth;
         ragdoll = GetComponent<Ragdoll>();
         var rigidBodies = GetComponentsInChildren<Rigidbody>();
-        botControl = GetComponent<LocalBotControl>();
+        // botControl = GetComponent<LocalBotControl>();
+        agent = GetComponent<AiAgent>();
         foreach (var rigidBody in rigidBodies)
         {
             Hitbox hitbox = rigidBody.gameObject.AddComponent<Hitbox>();
             hitbox.health = this;
-
-
         }
     }
 
@@ -30,7 +33,8 @@ public class BotHealth : MonoBehaviour
     public void DoDamage(float damage)
     {
         currentHealth -= damage;
-        if (currentHealth <= 0) {
+        if (currentHealth <= 0)
+        {
             Die();
         }
     }
@@ -38,6 +42,15 @@ public class BotHealth : MonoBehaviour
     private void Die()
     {
         ragdoll.ActivateRagdoll();
-        botControl.Kill();
+        agent.NetworkBots(2);
+
+        agent.isDead = true;
+        // botControl.dead = true;
+    }
+
+    public void Update()
+    {
+        if (dealDamage)
+            DoDamage(currentHealth);
     }
 }

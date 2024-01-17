@@ -28,7 +28,7 @@ public class ReloadingRifle : SimpleGun
         // magazine interactible follows gun interactible without nesting it
         if (magInGun)
         {
-            Debug.Log("Mag in gun");
+            //Debug.Log("Mag in gun");
             magazine.transform.position = rifle.transform.position;
             magazine.transform.rotation = rifle.transform.rotation * Quaternion.Euler(0, 90, 0);
         }

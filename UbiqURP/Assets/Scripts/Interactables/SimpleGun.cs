@@ -11,6 +11,9 @@ public class SimpleGun : MonoBehaviour
     public float fireRate = 1f;
     public float impactForce = 20f;
 
+    
+    
+    private NetworkedGun networkedGunInfo;
     [SerializeField]
     private bool AddBulletSpread = true;
     [SerializeField]
@@ -29,8 +32,10 @@ public class SimpleGun : MonoBehaviour
     private LayerMask Mask;
 
 
-
-    private float LastShootTime;
+    private void Start()
+    {
+        networkedGunInfo = GetComponent<NetworkedGun>();
+    }
     public void Shoot()
     {
         if (Time.time >= timeToNext)
@@ -53,7 +58,7 @@ public class SimpleGun : MonoBehaviour
 
                 //doing damage
                 var hitBox = hit.transform.GetComponent<Hitbox>();
-                if(hitBox)
+                if(hitBox && networkedGunInfo.owner)
                 {
                     hitBox.OnRaycastHit(this);
                 }

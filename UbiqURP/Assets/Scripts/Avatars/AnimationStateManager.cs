@@ -10,6 +10,7 @@ public class AnimationStateManager : MonoBehaviour
     public float speed;
     public float updateInterval;
     public Vector3 worldVelocity;
+    public Vector3 xzVelocity;
 
     private Vector3 previousPosition;
     private float timeRemaining;
@@ -40,12 +41,19 @@ public class AnimationStateManager : MonoBehaviour
     { 
 
         worldVelocity = (transform.position - previousPosition) / updateInterval;
-        speed = worldVelocity.magnitude;
+
+        //zero out movement in y axis, so that crouching/rising doesn't trigger walking animations
+        xzVelocity = new Vector3(worldVelocity.x, 0, worldVelocity.z);
+        speed = xzVelocity.magnitude;
         lowerBodyAnimator.SetFloat("WorldSpeed", speed);
         previousPosition = transform.position;
     }
 
-  
+    //establish a threshold, as a percentage of some height of the avatar, that constitutes crouching
+
+    //source a crouch walking animation
+
+    //apply to movements while crouched.
 
 
 }

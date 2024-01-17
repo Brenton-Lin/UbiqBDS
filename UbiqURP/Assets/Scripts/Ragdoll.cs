@@ -10,7 +10,8 @@ public class Ragdoll : MonoBehaviour
     void Start()
     {
         rigidbodies = GetComponentsInChildren<Rigidbody>();
-        animator = GetComponent<Animator>();
+        if (GetComponent<Animator>())
+            animator = GetComponent<Animator>();
         DeactivateRagdoll();
     }
 
@@ -21,7 +22,8 @@ public class Ragdoll : MonoBehaviour
         {
             rigidbody.isKinematic = true;
         }
-        animator.enabled = true;
+        if(animator != null)
+            animator.enabled = true;
     }
 
     public void ActivateRagdoll()
@@ -30,6 +32,7 @@ public class Ragdoll : MonoBehaviour
         {
             rigidbody.isKinematic = false;
         }
-        animator.enabled = false;
+        if (animator != null)
+            animator.enabled = false;
     }
 }

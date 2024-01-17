@@ -8,6 +8,8 @@ TagManager:
   - Interactable
   - Magazine
   - Flashlight
+  - TrackedBot
+  - SuppressionSphere
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - Magazine
   - Rifle
   - Flashlight
-  - 
-  - 
+  - Bot
+  - Navigation
   - 
   - 
   - 
