@@ -93,7 +93,7 @@ public class AiEyes : MonoBehaviour
         return false;
     }
 
-    private bool IsInSight(GameObject obj)
+    public bool IsInSight(GameObject obj)
     {
         Vector3 origin = eyes.transform.position;
         Vector3 dest = obj.transform.position;
@@ -241,7 +241,7 @@ public class AiEyes : MonoBehaviour
         if (viewMesh)
         {
             Gizmos.color = wedgeColor;
-            // Gizmos.DrawMesh(viewMesh, eyes.transform.position, gameObject.transform.rotation);
+            Gizmos.DrawMesh(viewMesh, eyes.transform.position, gameObject.transform.rotation);
         }
 
     }

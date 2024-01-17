@@ -8,8 +8,6 @@ using Ubiq.Samples.Bots;
 
 public class AiPatrol : AiState
 {
-    public NetworkContext context;
-
 
     public Transform targetDestination;
     NavMeshAgent navAgent;
@@ -34,6 +32,8 @@ public class AiPatrol : AiState
         numPathNodes = botPath.Count;
 
         animator.SetBool("patrol", true);
+
+        agent.poseConstraints.IdlePose();
     }
 
     public void Exit(AiAgent agent)
@@ -48,6 +48,9 @@ public class AiPatrol : AiState
 
     public void Update(AiAgent agent)
     {
+
+        // Bot Route logic
+
         // if distance from spot to bot is 0 and bot's speed is 0, iterate to next test target
 
         if (Vector3.Distance(targetDestination.position, navAgent.transform.position) <= 0.1 || navAgent.velocity.magnitude <= 1f && !isStopped)
@@ -61,11 +64,30 @@ public class AiPatrol : AiState
 
             navAgent.destination = targetDestination.position;
 
-            animator.SetFloat("AgentSpeed", navAgent.velocity.magnitude);
+            
         }
-        
+        animator.SetFloat("AgentSpeed", navAgent.velocity.magnitude);
 
-        // agent turns to sound
+        // Bot spotting and hearing logic
+
+
+        // sees target
+        if (agent.bestTarget != null)
+        {
+            navAgent.destination = agent.transform.position;
+            navAgent.ResetPath();
+            agent.navMeshAgent.velocity = new Vector3(0, 0, 0);
+
+            if (agent.lastBestTarget != agent.bestTarget)
+            {
+                agent.lastBestTarget = agent.bestTarget;
+                agent.lastLocationOfEnemy = agent.bestTarget.transform;
+                agent.stateMachine.ChangeState(AiStateId.Flee);
+
+            }
+        }
+
+        // hears target
         if (agent.mostNoticedSound != null && agent.bestTarget == null) 
         {
             navAgent.destination = agent.transform.position;
@@ -79,43 +101,13 @@ public class AiPatrol : AiState
             {
                 agent.lastNoticedSound = agent.mostNoticedSound;
 
-                // if source is behind > 180 degrees, turn animation first
-
-                Vector3 directionToTarget = agent.mostNoticedSound.transform.position - agent.transform.position;
-                directionToTarget.Normalize();
-
-                float dotProduct = Vector3.Dot(agent.transform.forward, directionToTarget);
-
-                if (dotProduct >= 0)
-                {
-                    Debug.Log("The target is in front of the bot.");
-                }
-                else if (dotProduct < 0)
-                {
-                    Debug.Log("The target is behind the bot.");
-                    animator.SetBool("TurnAround", true);
-                }
-
-                // agent.poseConstraints.DirectHead(agent.mostNoticedSound.transform);
-
+                // investigate sound
+                agent.stateMachine.ChangeState(AiStateId.Investigate);
             }
-            
-
-
-            // investigate a sound
-            // agent.stateMachine.ChangeState(AiStateId.Investigate);
-
-            
+                       
 
         }
 
-
-        if (agent.bestTarget != null) 
-        {
-            // agent gun aim constraints
-
-                // branch statement for insta-shoot, 
-        }
 
         agent.NetworkBots(1);
 

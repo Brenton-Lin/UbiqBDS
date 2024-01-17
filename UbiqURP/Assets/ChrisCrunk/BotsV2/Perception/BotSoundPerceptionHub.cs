@@ -105,6 +105,7 @@ public class BotSoundPerceptionHub : MonoBehaviour
         float plodSound = 0;
 
 
+        if (soundsAndVols == null) { return null; }
 
         foreach(KeyValuePair<AudioSource, float> pair in soundsAndVols)
         {

@@ -12,7 +12,9 @@ public class AiCombat : AiState
 
         if (agent.owner)
         {
-            agent.NetworkBots(4);
+
+            GetNetworkUpdates(agent);
+            // iniate a fucking stnad in bullshit objectg
         }
 
     }
@@ -47,6 +49,8 @@ public class AiCombat : AiState
 
 
         // set pose when target changes
+
+
 
         if (agent.bestTarget != null && agent.lastBestTarget != agent.bestTarget)
         {

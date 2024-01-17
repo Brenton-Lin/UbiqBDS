@@ -105,6 +105,12 @@ public class BotPoseConstraints : MonoBehaviour
         
     }
 
+    public void LookPose()
+    {
+        headLayer.weight = 1.0f;
+        weaponAimLayer.weight = 0f;
+    }
+
     public void RebuildRig()
     {
         agent.rigs.Build();

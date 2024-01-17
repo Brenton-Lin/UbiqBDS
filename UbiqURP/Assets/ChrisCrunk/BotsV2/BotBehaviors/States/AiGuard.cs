@@ -16,10 +16,13 @@ public class AiGuard : AiState
         navAgent = agent.GetComponent<NavMeshAgent>();
         animator = agent.GetComponent<Animator>();
 
+        agent.poseConstraints.IdlePose();
+
+        // send network update if owner
         if (agent.owner)
         {
             
-
+            GetNetworkUpdates(agent);
         }
 
         // set constraints to relaxed idle state
@@ -28,10 +31,7 @@ public class AiGuard : AiState
 
     public void Update(AiAgent agent)
     {
-        agent.poseConstraints.IdlePose();
 
-        // send network update if owner
-        GetNetworkUpdates(agent);
 
         // switch when target is found
         if (agent.bestTarget != null)
@@ -55,7 +55,7 @@ public class AiGuard : AiState
     // send network updates lol
     public void GetNetworkUpdates(AiAgent agent)
     {
-        Debug.Log("Sending message to update pose");
+        //Debug.Log("Sending message to update pose");
         agent.NetworkBots(3);
     }
 
