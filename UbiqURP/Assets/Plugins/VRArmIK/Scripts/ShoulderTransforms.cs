@@ -32,11 +32,13 @@ namespace VRArmIK
 
 		void Start()
 		{
-			setShoulderWidth(PoseManager.Instance.playerWidthShoulders);
+			//commenting out for testing, if no change to avatar behavior, remove setShoulderWidth function.
+			//setShoulderWidth(PoseManager.Instance.playerWidthShoulders);
 		}
 
 		public void setShoulderWidth(float width)
 		{
+			//should have no effect on anchor positions
 			Vector3 localScale = new Vector3(width * .5f, .05f, .05f);
 			Vector3 localPosition = new Vector3(width * .25f, 0f, 0f);
 

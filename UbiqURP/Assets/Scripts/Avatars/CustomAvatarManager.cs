@@ -7,6 +7,7 @@ using Ubiq.Spawning;
 using Ubiq.Voip;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements;
 
 namespace Ubiq.Avatars
 {
@@ -19,6 +20,7 @@ namespace Ubiq.Avatars
     {
         public PrefabCatalogue avatarCatalogue;
         public bool isVR = true;
+        public Vector3 localCalibratedScale;
         public GameObject vrAvatarPrefab;
         public GameObject desktopAvatarPrefab;
         public GameObject selectedPrefab;
@@ -117,6 +119,13 @@ namespace Ubiq.Avatars
                     gameObject.transform.localRotation = LocalAvatar.transform.localRotation;
                 }
                 avatar.IsLocal = true;
+
+                if(isVR)
+                {
+                    //Set the scale for the local VR avatar. 
+                    avatar.GetComponentInChildren<CustomThreePointAvatar>().avatarScale = localCalibratedScale;
+                }
+
                 avatar.SetHints(hints);
                 gameObject.name = $"My Avatar #{peer.uuid}";
 
@@ -162,6 +171,7 @@ namespace Ubiq.Avatars
                 if (isVR)
                 {
                     selectedPrefab = vrAvatarPrefab;
+
 
                 }
                 else

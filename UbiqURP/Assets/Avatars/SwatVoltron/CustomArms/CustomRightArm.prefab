@@ -115,7 +115,7 @@ Transform:
   m_GameObject: {fileID: 1427924306398822246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3111112497082970150}
@@ -139,10 +139,9 @@ MonoBehaviour:
   wrist1: {fileID: 0}
   wrist2: {fileID: 0}
   hand: {fileID: 4686448911694270346}
-  handRenderer: {fileID: 2009135911092059294}
   handObject: {fileID: 2009135911103623658}
   armLengthByScale: 1
-  scaleAxis: {x: 1, y: 1, z: 1}
+  scaleAxis: {x: 0.9, y: 0.9, z: 0.9}
   scaleHandFactor: 0.7
 --- !u!114 &3317885906334173005
 MonoBehaviour:
@@ -573,12 +572,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02d2c3f5b5ca1014c8fb700e729167ae, type: 3}
---- !u!137 &2009135911092059294 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 13700000, guid: 02d2c3f5b5ca1014c8fb700e729167ae,
-    type: 3}
-  m_PrefabInstance: {fileID: 2009135911103526718}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2009135911103131018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400052, guid: 02d2c3f5b5ca1014c8fb700e729167ae,

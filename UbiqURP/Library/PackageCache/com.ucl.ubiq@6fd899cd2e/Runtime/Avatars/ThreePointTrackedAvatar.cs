@@ -55,6 +55,7 @@ namespace Ubiq.Avatars
             public PositionRotation rightHand;
             public float leftGrip;
             public float rightGrip;
+            public float scale;
         }
 
         protected void Start()
@@ -67,14 +68,15 @@ namespace Ubiq.Avatars
 
         private void Update ()
         {
-            if(avatar.IsLocal)
+            if (avatar.IsLocal)
             {
                 // Update state from hints
-                state[0].head = GetPosRotHint("HeadPosition","HeadRotation");
-                state[0].leftHand = GetPosRotHint("LeftHandPosition","LeftHandRotation");
-                state[0].rightHand = GetPosRotHint("RightHandPosition","RightHandRotation");
+                state[0].head = GetPosRotHint("HeadPosition", "HeadRotation");
+                state[0].leftHand = GetPosRotHint("LeftHandPosition", "LeftHandRotation");
+                state[0].rightHand = GetPosRotHint("RightHandPosition", "RightHandRotation");
                 state[0].leftGrip = GetFloatHint("LeftGrip");
                 state[0].rightGrip = GetFloatHint("RightGrip");
+               
 
                 // Send it through network
                 if ((Time.time - lastTransmitTime) > (1f / avatar.UpdateRate))

@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Ubiq.Messaging;
+using Ubiq.Spawning;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -20,7 +21,7 @@ public class AiAgent : MonoBehaviour
     [Header("Team management\n")]
     public bool friendly;
     public bool isDead = false;
-
+    public bool isPlayer;
     public bool isInFormation = false;
 
     
@@ -43,8 +44,14 @@ public class AiAgent : MonoBehaviour
     public Transform homeBase;
     public Transform lastLocationOfEnemy;
 
+    public Transform advanceToThisLocation;
+    public bool isAdvancing;
+    public bool advancingDemonstration = false;
+
+    public bool isOrderedToMoveForward;
+
     // cover taking
-    // public CoverObject closestCover;
+    public CoverObject coverObject;
 
 
     // sound hearing
@@ -87,10 +94,58 @@ public class AiAgent : MonoBehaviour
     bool isGuard;
     bool isAim;
 
+    private BotNetworking[] transformContexts;
+    
+
+    private void Awake()
+    {
+        if (isPlayer)
+            return;
+
+        // NetworkSpawnManager.Find(this).SpawnWithRoomScope(botAvatar);
+
+        // get all transforms with NetworkContexts on them
+        transformContexts = GetComponentsInChildren<BotNetworking>();
+
+        if (GetComponent<BotNetworking>() == null)
+            return;
+
+        if (owner)
+            GetComponent<BotNetworking>().isOwner = true;
+        else
+            GetComponent<BotNetworking>().isOwner = false;
+
+        foreach (BotNetworking t in transformContexts)
+        {
+            if (owner)
+
+                t.isOwner = true;
+            else
+                t.isOwner = false;
+        }
+
+    }
+
 
     // Start is called before the first frame update
     void Start()
     {
+        owner = ServerClientFlag.Instance.isServer;
+        if (isPlayer)
+            return;
+
+        if (!owner)
+        {
+            // remove rigbuilder, animator, navmeshagent and let master handle all transforms
+
+            Destroy(GetComponent<RigBuilder>());
+            Destroy(GetComponent<Animator>());
+            Destroy(GetComponent<NavMeshAgent>());
+
+        }
+
+        context = NetworkScene.Register(this);
+
 
         eyes = GetComponent<AiEyes>();
 
@@ -111,19 +166,42 @@ public class AiAgent : MonoBehaviour
         stateMachine.RegisterState(new AiInvestigate());
         stateMachine.RegisterState(new AiFlee());
         stateMachine.RegisterState(new AiMessageComrades());
+        stateMachine.RegisterState(new AiTakeCover());
+        stateMachine.RegisterState(new AiAdvancePosition());
 
         stateMachine.ChangeState(initialState);
 
-        context = NetworkScene.Register(this);
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isPlayer)
+            return;
+
+        if (!owner)
+        {
+
+            /*          
+             *          // destroy the rest of the bot in other instances
+             *          GameObject botHusk = new GameObject();
+
+                        gameObject.transform.GetChild(0).parent = botHusk.transform;
+                        gameObject.transform.GetChild(1).parent = botHusk.transform;
+                        gameObject.transform.GetChild(2).parent = botHusk.transform;
+
+                        Destroy(gameObject);
+                        Destroy(this);*/
+
+            return;
+
+        }
+
+
         currentState = stateMachine.currentState.ToString();
 
-        if (ears != null)
+        if (ears != null && GameObject.Find("BotSoundPerceptionHub"))
             mostNoticedSound = GameObject.Find("BotSoundPerceptionHub").GetComponent<BotSoundPerceptionHub>().GetMostNoticedSound(this);
 
         if (eyes != null)
@@ -213,6 +291,21 @@ public class AiAgent : MonoBehaviour
     }
 
 
+    public bool AnimatorIsPlaying()
+    {
+        Debug.Log("Checking animation status");
+        if (animator.IsInTransition(0))
+        {
+            Debug.Log("In transition. ");
+            return true;
+        }
+
+        Debug.Log(animator.GetCurrentAnimatorStateInfo(0).fullPathHash);
+        return animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1;
+
+    }
+
+
     /***************************************************************************************************************************************
     *--/\/--/\/--/\/--/\/--/\/--/\/--/\/--/\/--/\/--/\/--/\/-      Networking      -/\/--/\/--/\/--/\/--/\/--/\/--/\/--/\/--/\/--/\/--/\/--*
     ***************************************************************************************************************************************/
@@ -222,8 +315,9 @@ public class AiAgent : MonoBehaviour
     {
 
         // set ActivateToEnableBotNetworkCalls to active in hierarchy to enable networking
-        if (GameObject.Find("ActivateToEnableBotNetworkCalls") == null)
-            return;
+        //commented out to test new network architecture.
+        //if (GameObject.Find("ActivateToEnableBotNetworkCalls") == null)
+            //return;
 
         switch (mess)
         {
@@ -265,6 +359,7 @@ public class AiAgent : MonoBehaviour
             case 2:
                 if (owner)
                 {
+                    Debug.Log("server sending kill command");
                     context.SendJson(new Message
                     {
                         clearOwners = false,
@@ -322,6 +417,7 @@ public class AiAgent : MonoBehaviour
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
+        Debug.Log("msg recieved from server!");
         var m = message.FromJson<Message>();
 
         if (m.move)

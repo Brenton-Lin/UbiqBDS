@@ -10,8 +10,12 @@ public class AiInvestigate : AiState
 
     public bool isInvestigating = false;
 
+
+
     public void Enter(AiAgent agent)
     {
+        isInvestigating = false;
+
         animator = agent.GetComponent<Animator>();
         navMeshAgent = agent.navMeshAgent;
 
@@ -41,6 +45,8 @@ public class AiInvestigate : AiState
             Debug.Log("The target is behind the bot.");
             animator.SetBool("TurnAround", true);
         }
+
+
     }
 
     public void Exit(AiAgent agent)
@@ -56,12 +62,12 @@ public class AiInvestigate : AiState
     public void Update(AiAgent agent)
     {
         // wait til turn/search animation play, then approach target
-        if (!AnimatorIsPlaying() && !isInvestigating)
+        if (!agent.AnimatorIsPlaying() && !isInvestigating)
         {
             isInvestigating = true;
             navMeshAgent.destination = agent.lastNoticedSound.transform.position;
             navMeshAgent.isStopped = false;
-            navMeshAgent.speed = 1f;
+            navMeshAgent.speed = 2f;
             Debug.Log("Enabled agent");
         }
 
@@ -74,22 +80,11 @@ public class AiInvestigate : AiState
 
             if (agent.lastBestTarget != agent.bestTarget)
             {
-
                 agent.lastBestTarget = agent.bestTarget;
                 agent.lastLocationOfEnemy = agent.bestTarget.transform;
-                agent.stateMachine.ChangeState(AiStateId.Flee);
+                agent.stateMachine.ChangeState(AiStateId.Combat);
             }
         }
-    }
-
-
-    public bool AnimatorIsPlaying()
-    {
-        if (animator.IsInTransition(0))
-            return true;
-
-        return animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1;
-        
     }
 
 

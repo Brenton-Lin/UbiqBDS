@@ -27,7 +27,7 @@ public class AiPatrol : AiState
         animator = agent.GetComponent<Animator>();
 
         botPath = agent.botPath;
-        targetDestination = botPath[0].transform;        
+        targetDestination = botPath[0].transform;
 
         numPathNodes = botPath.Count;
 

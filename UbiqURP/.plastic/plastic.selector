@@ -1,4 +1,3 @@
-repository "BDS_Team@BDS_Development@cloud"
+rep "BDS_Team@BDS_Development@cloud"
   path "/"
-    smartbranch "/main" changeset "21"               
-     
+    smartbranch "/main/Bot Hit Detection and Death Syncing/Avatar resizing and redesign"   

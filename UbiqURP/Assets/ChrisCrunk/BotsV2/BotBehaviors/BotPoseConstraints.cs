@@ -96,13 +96,20 @@ public class BotPoseConstraints : MonoBehaviour
         data.Clear();
         
         weaponAimLayer.weight = 0f;
+
+        agent.rigs.Build();
     }
 
     public void IdlePose()
     {
         headLayer.weight = 0f;
         weaponAimLayer.weight = 0f;
-        
+        var data = weaponAimConstraint.data.sourceObjects;
+        weaponAimConstraint.data.sourceObjects = data;
+        data.Clear();
+
+        agent.rigs.Build();
+
     }
 
     public void LookPose()

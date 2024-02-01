@@ -52,6 +52,8 @@ namespace Ubiq.Avatars
         /// </summary>
         public int UpdateRate = 60;
 
+        
+
 
         // These properties should be set by whatever Component controls the avatar.
         public Vector3 Position { get; set; }

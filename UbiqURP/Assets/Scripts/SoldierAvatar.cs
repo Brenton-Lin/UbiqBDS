@@ -1,19 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using Ubiq.Avatars;
+using Ubiq.Messaging;
 using Ubiq.Samples;
 using UnityEngine;
+using UnityEngine.UIElements;
 using VRArmIK;
+using static UnityEngine.UI.GridLayoutGroup;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class SoldierAvatar : MonoBehaviour
 {
+   
     public Transform head;
     public Transform torso;
     public Transform leftHand;
     public Transform rightHand;
     public bool isLocal;
     public Ubiq.Avatars.Avatar avatar;
-   
+    public NetworkContext context;
+
+
+    //Stuff for dynamic avatar scaling, clean this up later...
+    public GameObject avatarVisuals;
+    public Transform torsoScaleHandle;
+    public Transform legScaleHandle;
     /*
     public Renderer torsoRenderer;
     public Renderer leftHandRenderer;
@@ -32,13 +43,14 @@ public class SoldierAvatar : MonoBehaviour
     //public AnimationCurve torsoFacingCurve;
 
     private TexturedAvatar texturedAvatar;
-    private ThreePointTrackedAvatar trackedAvatar;
+    //change this to track custom 3 point avatar with scale state.!!!!!
+    private CustomThreePointAvatar trackedAvatar;
     private Vector3 footPosition;
     private Quaternion torsoFacing;
 
     private void OnEnable()
     {
-        trackedAvatar = GetComponentInParent<ThreePointTrackedAvatar>();
+        trackedAvatar = GetComponentInParent<CustomThreePointAvatar>();
         avatar = GetComponentInParent<Ubiq.Avatars.Avatar>();
 
         if (trackedAvatar)
@@ -104,17 +116,26 @@ public class SoldierAvatar : MonoBehaviour
     {
         //Not the most efficient placement, but the IsLocal flag is only set in the Avatar Manager, after the avatar is spawned and enabled
         //Maybe make a method that we can call from the Avatar manager.
-        
+    
 
     }
     private void Start()
     {
+       
         
     }
+    private struct Message
+    {
+        public float scale;
+    }
 
+   
     IEnumerator SetLocalVisuals()
     {
+        //ensure visuals run AFTER avatar script sets isLocal Flag
         yield return new WaitForSeconds(1);
+        //disable visuals before scaling.
+       
         if (avatar.IsLocal)
         {
             isLocal = true;
@@ -123,11 +144,17 @@ public class SoldierAvatar : MonoBehaviour
             ArmTransforms[] arms = GetComponentsInChildren<ArmTransforms>();
             foreach(var arm in arms)
             {
+                //disable remote avatar hands on the local client
                 arm.handObject.SetActive(false);
                 
             }
 
         }
+        //scale avatar components before enabling.
+        torsoScaleHandle.localScale = trackedAvatar.avatarScale;
+        legScaleHandle.localScale = trackedAvatar.avatarScale;
+        //actually enable gameObj
+        avatarVisuals.SetActive(true);
     }
 
 

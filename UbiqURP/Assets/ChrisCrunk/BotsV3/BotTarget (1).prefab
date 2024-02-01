@@ -23,7 +23,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3868366881693793081
 Transform:
   m_ObjectHideFlags: 0
@@ -114,36 +114,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582fe5dd91c45124e82f56342fc90f1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeStateInPlayMode: 0
   friendly: 0
   isDead: 0
+  isInFormation: 0
   eyes: {fileID: 0}
   scanFrequency: 30
-  seeableTargets: []
+  potentialVisualTargets: []
+  bestTarget: {fileID: 0}
+  lastBestTarget: {fileID: 0}
   navMeshAgent: {fileID: 0}
-  closestCover: {fileID: 0}
+  botPath: []
+  homeBase: {fileID: 0}
+  lastLocationOfEnemy: {fileID: 0}
+  advanceToThisLocation: {fileID: 0}
+  isAdvancing: 0
+  advancingDemonstration: 0
+  isOrderedToMoveForward: 0
+  coverObject: {fileID: 0}
   ears: {fileID: 0}
-  hearingSensitivity: 0
   heardSounds: []
   mostNoticedSound: {fileID: 0}
   lastNoticedSound: {fileID: 0}
-  suppressionSphere: {fileID: 0}
   rigs: {fileID: 0}
-  eyeConstraint: {fileID: 0}
-  eyeConstraintDamp: {fileID: 0}
-  weaponAimConstraint: {fileID: 0}
   poseConstraints: {fileID: 0}
-  bestTarget: {fileID: 0}
-  lastBestTarget: {fileID: 0}
   gunTip: {fileID: 0}
   rifle: {fileID: 0}
   initialState: 17
   currentState: 0
-  isPatrolling: 0
-  botPath: []
+  swapToCurrentStateMidPlay: 0
   owner: 0
-  isGuard: 0
-  isAim: 0
 --- !u!114 &3868366881693793080
 MonoBehaviour:
   m_ObjectHideFlags: 0

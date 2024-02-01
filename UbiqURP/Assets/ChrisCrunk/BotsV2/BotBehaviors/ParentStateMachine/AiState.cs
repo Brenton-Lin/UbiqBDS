@@ -17,6 +17,8 @@ public enum AiStateId
         GetSmall, // cower
         Flee, // when separated from main group
 
+    AdvancePosition,
+
 
     MessageComrades,
     Hide,

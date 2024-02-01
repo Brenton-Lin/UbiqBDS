@@ -17,7 +17,7 @@ namespace VRArmIK
 		public const float referencePlayerWidthWrist = 1.39f;
 		public float playerHeightHmd = 1.70f;
 		public float playerWidthWrist = 1.39f;
-		public float playerWidthShoulders = 0.31f;
+		public float playerWidthShoulders = 0.2f;
 
 		void OnEnable()
 		{

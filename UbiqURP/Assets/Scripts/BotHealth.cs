@@ -10,7 +10,7 @@ public class BotHealth : MonoBehaviour
     Ragdoll ragdoll;
     // LocalBotControl botControl;
 
-    AiAgent agent;
+    public AiAgent agent;
 
     public bool dealDamage;
 
@@ -42,9 +42,11 @@ public class BotHealth : MonoBehaviour
     private void Die()
     {
         ragdoll.ActivateRagdoll();
-        agent.NetworkBots(2);
 
         agent.isDead = true;
+        agent.NetworkBots(2);
+        Destroy(gameObject, 5f);
+       
         // botControl.dead = true;
     }
 

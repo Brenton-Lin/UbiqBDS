@@ -21,7 +21,7 @@ public class AiCombat : AiState
 
     public void Exit(AiAgent agent)
     {
-
+        agent.poseConstraints.ClearAim();
     }
 
     public AiStateId GetId()
@@ -58,7 +58,7 @@ public class AiCombat : AiState
 
             agent.poseConstraints.DirectHead(agent.bestTarget.transform);
             agent.poseConstraints.DirectWeapon(agent.bestTarget.transform);
-            agent.poseConstraints.RebuildRig();
+            // agent.poseConstraints.RebuildRig();
 
             GetNetworkUpdates(agent);
         }

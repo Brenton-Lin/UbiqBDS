@@ -17,7 +17,7 @@ public class SimpleGun : MonoBehaviour
     [SerializeField]
     private bool AddBulletSpread = true;
     [SerializeField]
-    private Vector3 BulletSpread = new Vector3(0.05f, 0.05f, 0.05f);
+    private Vector3 BulletSpread = new Vector3(0f, 0f, 0f);
     [SerializeField]
     private ParticleSystem ShootEffect;
     [SerializeField]
@@ -58,7 +58,8 @@ public class SimpleGun : MonoBehaviour
 
                 //doing damage
                 var hitBox = hit.transform.GetComponent<Hitbox>();
-                if(hitBox && networkedGunInfo.owner)
+                //raycast only happens on server
+                if(hitBox && ServerClientFlag.Instance.isServer)
                 {
                     hitBox.OnRaycastHit(this);
                 }

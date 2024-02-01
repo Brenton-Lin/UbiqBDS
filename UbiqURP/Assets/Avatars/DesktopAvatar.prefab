@@ -546,6 +546,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floating_Head
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fa1679f3f2846f842980431e3913b7e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa1679f3f2846f842980431e3913b7e7, type: 3}
 --- !u!4 &7388576005872743378 stripped
@@ -554,6 +559,67 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6990650701382259769}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7909075312522340712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fa1679f3f2846f842980431e3913b7e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6990650701382259769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &7415698881895004694
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909075312522340712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1695643
+  m_Center: {x: -0.00021778792, y: 0.019047342, z: 0.04815236}
+--- !u!114 &4260688933790765665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909075312522340712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 582fe5dd91c45124e82f56342fc90f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  friendly: 1
+  isDead: 0
+  isPlayer: 1
+  isInFormation: 0
+  eyes: {fileID: 0}
+  scanFrequency: 30
+  potentialVisualTargets: []
+  bestTarget: {fileID: 0}
+  lastBestTarget: {fileID: 0}
+  navMeshAgent: {fileID: 0}
+  botPath: []
+  homeBase: {fileID: 0}
+  lastLocationOfEnemy: {fileID: 0}
+  advanceToThisLocation: {fileID: 0}
+  isAdvancing: 0
+  advancingDemonstration: 0
+  isOrderedToMoveForward: 0
+  coverObject: {fileID: 0}
+  ears: {fileID: 0}
+  heardSounds: []
+  mostNoticedSound: {fileID: 0}
+  lastNoticedSound: {fileID: 0}
+  rigs: {fileID: 0}
+  poseConstraints: {fileID: 0}
+  gunTip: {fileID: 0}
+  rifle: {fileID: 0}
+  initialState: 0
+  currentState: 
+  swapToCurrentStateMidPlay: 0
+  owner: 0
 --- !u!23 &8557492846676609213 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: fa1679f3f2846f842980431e3913b7e7,

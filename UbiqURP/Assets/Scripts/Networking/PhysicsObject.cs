@@ -17,6 +17,7 @@ public class PhysicsObject : NetworkedObject
     {
         context = NetworkScene.Register(this);
         rb = GetComponent<Rigidbody>();
+        owner = ServerClientFlag.Instance.isServer;
     }
 
     Vector3 lastPosition;
