@@ -6,3 +6,5 @@ Core Features include:
 -Networked avatars and interactions
 -robust computer controlled advesaries
 -Realistic equipment and environment
+
+NOTE: This code is the depreciated initial public version, future development is being done in a private PlasticSCM repository.
